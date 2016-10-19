@@ -10,7 +10,7 @@ public class Main {
         LookAndFeel progStyle = new LookAndFeel();
         progStyle.setLookAndFeel();
 
-        IsInternetConnection connection = new IsInternetConnection("");
+        IsInternetConnection connection = new IsInternetConnection();
         Thread nThread = new Thread(connection);
         nThread.start();
         Workcbench workplace = new Workcbench();

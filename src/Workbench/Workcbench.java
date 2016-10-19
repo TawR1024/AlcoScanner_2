@@ -43,14 +43,15 @@ public class Workcbench extends JFrame {
         RequestButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                IsInternetConnection connection = new IsInternetConnection("");
-                connection.run();
-                if ((connection.getStatus()) == false) {
-                    JOptionPane.showMessageDialog(rootPane,
-                            "No Internet Connection.",
-                            "Connection error",
-                            JOptionPane.ERROR_MESSAGE);
-                }
+                IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
+                Thread nThread = new Thread(connection);
+                nThread.start();
+//                if ((connection.getStatus()) == false) {
+//                    JOptionPane.showMessageDialog(rootPane,
+//                            "No Internet Connection.",
+//                            "Connection error",
+//                            JOptionPane.ERROR_MESSAGE);
+//                }
                 try {
 //                    String requestInfo;
 //                    SendRequest request = new SendRequest(PDF417codeField.getText());
