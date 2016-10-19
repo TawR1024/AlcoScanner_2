@@ -68,9 +68,8 @@ public class Workcbench extends JFrame {
         }
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
-//                        InformationTable infoTable = new InformationTable(infoFields);
-//                    infoTable.setLocationRelativeTo(null);
-//                    infoTable.ShowInformation();
+        InformationTable infoTable = new InformationTable(infoFields);
+        infoTable.setLocationRelativeTo(null);
     }
 
 //    public boolean checkConnection(){
