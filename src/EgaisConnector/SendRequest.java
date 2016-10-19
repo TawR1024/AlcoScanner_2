@@ -19,19 +19,20 @@ public class SendRequest {
     private void setPDF417code(String code){
         finalUrl = baseURL + code;
     }
-
+    /**Конструктор
+     * @param PDF417Code Строка содержащая считанный PDF417*/
     public SendRequest(String PDF417Code){
         setPDF417code(PDF417Code);
     }
 
-
+    /**Запрашивает инфомрацию и усервера
+     * @return inputLine Строка содержащая HTML ответ сервера. теги html и body удалены*/
     public String getInfo()throws Exception{
         URL egais = new URL(finalUrl);
         BufferedReader inputBuffer = new BufferedReader(new InputStreamReader(egais.openStream()));
         String inputLine;
         inputLine = inputBuffer.readLine();
         inputBuffer.close();
-        System.out.print(inputLine);
         return inputLine;
     }
 }

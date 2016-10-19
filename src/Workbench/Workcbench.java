@@ -1,6 +1,7 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
+import service.HtmlParser;
 import service.IsInternetConnection;
 
 import javax.swing.*;
@@ -47,25 +48,29 @@ public class Workcbench extends JFrame {
                 IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
                 Thread nThread = new Thread(connection);
                 nThread.start();
-                try {
-                    String requestInfo;
-                    SendRequest request = new SendRequest(PDF417codeField.getText());
-                    requestInfo = request.getInfo();
-//                    HtmlParser parser = new HtmlParser(requestInfo);
-//                    String[] infoFields = parser.parsing();
-//                    System.out.print(infoFields);
-//                    InformationTable infoTable = new InformationTable(infoFields);
-//                    infoTable.setLocationRelativeTo(null);
-//                    infoTable.ShowInformation();
-                } catch (Exception e1) {
-                    e1.printStackTrace();
-                    JOptionPane.showMessageDialog(rootPane, "Request Error",
-                            "При получении информации возникла ошибка",
-                            JOptionPane.ERROR_MESSAGE);
-                }
+                sendRequest();
+
             }
 
         });
+    }
+
+    private void sendRequest(){
+        String requestInfo="";
+        try {
+            SendRequest request = new SendRequest(PDF417codeField.getText());
+            requestInfo = request.getInfo();
+        } catch (Exception e1) {
+            e1.printStackTrace();
+            JOptionPane.showMessageDialog(rootPane, "Request Error",
+                    "При получении информации возникла ошибка",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+        HtmlParser parser = new HtmlParser(requestInfo);
+        String[] infoFields = parser.parsing();
+//                        InformationTable infoTable = new InformationTable(infoFields);
+//                    infoTable.setLocationRelativeTo(null);
+//                    infoTable.ShowInformation();
     }
 
 //    public boolean checkConnection(){
