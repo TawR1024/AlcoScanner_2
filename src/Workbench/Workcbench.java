@@ -1,5 +1,6 @@
 package Workbench;
 
+import EgaisConnector.SendRequest;
 import service.IsInternetConnection;
 
 import javax.swing.*;
@@ -46,16 +47,10 @@ public class Workcbench extends JFrame {
                 IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
                 Thread nThread = new Thread(connection);
                 nThread.start();
-//                if ((connection.getStatus()) == false) {
-//                    JOptionPane.showMessageDialog(rootPane,
-//                            "No Internet Connection.",
-//                            "Connection error",
-//                            JOptionPane.ERROR_MESSAGE);
-//                }
                 try {
-//                    String requestInfo;
-//                    SendRequest request = new SendRequest(PDF417codeField.getText());
-//                    requestInfo = request.getInfo();
+                    String requestInfo;
+                    SendRequest request = new SendRequest(PDF417codeField.getText());
+                    requestInfo = request.getInfo();
 //                    HtmlParser parser = new HtmlParser(requestInfo);
 //                    String[] infoFields = parser.parsing();
 //                    System.out.print(infoFields);
