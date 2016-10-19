@@ -1,5 +1,11 @@
 /**
  * Created by ilya-kulakov on 19.10.16.
+ * @author ilya-kulakov
+ * @vercion 2.0
+ * Set system look and feel class.
+ * on MAC look like standart MAC UI
+ * on Windows looks like standart Win ui
+ * on linux platform looks loke system X server
  */
 package Workbench;
 
