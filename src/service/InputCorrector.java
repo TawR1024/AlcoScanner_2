@@ -20,7 +20,7 @@ public class InputCorrector {
         inputCode = code;
     }
 
-    private void correctInput(){
+    private void correctInput(){//TODO:изменить реализацию
         char[] ru = rusAlpha.toCharArray();
         char[] en = engAlpha.toCharArray();
         char[] code = inputCode.toCharArray();

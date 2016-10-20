@@ -33,6 +33,8 @@ public class Workcbench extends JFrame {
         setVisible(true);
         setSize(500, 200);
         extractCodeButton.setVisible(true);
+
+
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
             @Override
@@ -69,6 +71,7 @@ public class Workcbench extends JFrame {
             JOptionPane.showMessageDialog(rootPane, "Request Error",
                     "При получении информации возникла ошибка",
                     JOptionPane.ERROR_MESSAGE);
+            return;
         }
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
