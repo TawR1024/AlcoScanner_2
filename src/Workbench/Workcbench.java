@@ -2,6 +2,7 @@ package Workbench;
 
 import EgaisConnector.SendRequest;
 import service.HtmlParser;
+import service.InputCorrector;
 import service.IsInternetConnection;
 
 import javax.swing.*;
@@ -37,8 +38,12 @@ public class Workcbench extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 alcoLable.setVisible(true);
+                InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
+                String str = corrector.getCorrecredCode();
+                PDF417codeField.setText(str);
                 PDF417Decoder alcoCode = new PDF417Decoder(PDF417codeField.getText());
                 alcoCodeLable.setText(alcoCode.extractCode());
+
             }
         });
 
@@ -49,7 +54,6 @@ public class Workcbench extends JFrame {
                 Thread nThread = new Thread(connection);
                 nThread.start();
                 sendRequest();
-
             }
 
         });
