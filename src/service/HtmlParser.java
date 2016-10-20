@@ -6,14 +6,15 @@ package service;
 public class HtmlParser {
 
     /**Содержит входную строку*/
-    public String inputBuffer;
+    private String inputBuffer;
     //**Массив с конснстантными размерами полей формы*/
-    int lengthArr[] ={14,10,10,10,7,15,10,13,5,5,7,10,10,13,5,5,7};
+       // @// TODO: 20.10.16 Изменить костыль
+    private int lengthArr[];
     /**индекс начала чтения информации в поле*/
-    int startIndex=0;
+    private int startIndex=0;
     /**конечный индекс чтения информации в поле*/
-    int endIndex = 0;
-    String[] str = new String[17]; //{" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "}; //инициализация иначе не \
+    private int endIndex = 0;
+    private String[] str = new String[17]; //{" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "}; //инициализация иначе не \
     // сработала, проверить способы инициализации.
 
     /**
@@ -22,6 +23,7 @@ public class HtmlParser {
      */
     public  HtmlParser(String input){
         inputBuffer = input;
+        lengthArr = new int[]{14,10,10,10,7,15,10,13,5,5,7,10,10,13,5,5,7};
     }
 
     /**Исключает из HTML текста теги типа <br></br>*/
@@ -32,7 +34,7 @@ public class HtmlParser {
     /**Извлечение информации из начального текста*/
     private void reedInfoFields(){
         int i = 0;
-        /**@// TODO: 20.10.16 Проверить выражение снизу */
+        /*@// TODO: 20.10.16 Проверить выражение снизу */
         //while(i < lengthArr.length && ((startIndex + lengthArr[i])<inputBuffer.length())){
         while(i < lengthArr.length){
             startIndex = lengthArr[i] + endIndex;

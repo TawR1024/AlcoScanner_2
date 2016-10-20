@@ -52,7 +52,7 @@ public class InformationTable extends JFrame{
     private JButton redactor;
     private String[] scanedCode;
 
-    public InformationTable(String[] code){
+    InformationTable(String[] code){
         super("Show Info");
         setContentPane(rootPanel);
         pack();
@@ -80,7 +80,7 @@ public class InformationTable extends JFrame{
     private void setScanedCode(String[] code){
         scanedCode = code;
     }
-        @// TODO: 20.10.16 Возможно стоит изменить на массив, для реализации красивого цикла заполнения
+        //@// TODO: 20.10.16 Возможно стоит изменить на массив, для реализации красивого цикла заполнения
     private void setEditable(){
         nameTextField.setEditable(true);
 
