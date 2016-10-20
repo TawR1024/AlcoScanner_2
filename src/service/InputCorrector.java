@@ -2,6 +2,7 @@ package service;
 
 /**
  * Created by ilya-kulakov on 20.10.16.
+ * @author ilya-kulakov
  */
 public class InputCorrector {
 
