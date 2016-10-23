@@ -4,6 +4,7 @@ import EgaisConnector.SendRequest;
 import service.HtmlParser;
 import service.InputCorrector;
 import service.IsInternetConnection;
+import service.SetEncoding;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -73,13 +74,14 @@ public class Workcbench extends JFrame {
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
+        SetEncoding encoding = new SetEncoding();
+        if(encoding.getEncodigStatus()){
+            requestInfo = encoding.encodeString(requestInfo);
+        }
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
         InformationTable infoTable = new InformationTable(infoFields);
         infoTable.setLocationRelativeTo(null);
     }
 
-//    public boolean checkConnection(){
-//        IsInternetConnection connection = IsInternetConnection.getInstance();
-//    }
 }
