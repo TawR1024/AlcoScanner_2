@@ -25,6 +25,7 @@ public class PDF417Decoder {
          * @return finalCode Возвращате строку в BASE10
          * @// TODO: 19.10.16 Проверить алгоритм вычисления. При извлечении код есть ошибка в конечных разрядах
          */
+        // FIXME: 23.10.16
         public String extractCode() {
             String finalCode;
             finalCode = inputCode.substring(4, 19);

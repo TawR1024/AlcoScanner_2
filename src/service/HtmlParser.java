@@ -29,6 +29,7 @@ public class HtmlParser {
     /**Исключает из HTML текста теги типа <br></br>*/
     private void prepareStirng(){
         inputBuffer = inputBuffer.replace("</br>", "\n");
+        inputBuffer = inputBuffer.replace("И","И");
     }
 
     /**Извлечение информации из начального текста*/

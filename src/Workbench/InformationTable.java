@@ -1,5 +1,7 @@
 package Workbench;
 
+import service.SetEncoding;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -119,54 +121,72 @@ public class InformationTable extends JFrame{
     }
 
     private void setInformation(){
+//        String str;
+//        str = SetEncoding.encodeString(scanedCode[0]);
         nameTextField.setText(scanedCode[0]);
         nameTextField.setEditable(false);
 
+       // str = SetEncoding.encodeString(scanedCode[1]);
         AlcoCodetextField.setText(scanedCode[1]);
         AlcoCodetextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[2]);
         CodeClasstextField.setText(scanedCode[2]);
         CodeClasstextField.setEditable(false);
 
+      //  str = SetEncoding.encodeString(scanedCode[3]);
         StrengthtextField.setText(scanedCode[3]);
         StrengthtextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[4]);
         volumeTextField.setText(scanedCode[4]);
         volumeTextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[5]);
         manufacturTextField.setText(scanedCode[5]);
         manufacturTextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[6]);
         fsrarTextField.setText(scanedCode[6]);
         fsrarTextField.setEditable(false);
 
+    //    str = SetEncoding.encodeString(scanedCode[7]);
         fullNameTextField.setText(scanedCode[7]);
         fullNameTextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[8]);
         innTextField.setText(scanedCode[8]);
         innTextField.setEditable(false);
 
+      //  str = SetEncoding.encodeString(scanedCode[9]);
         kppTextField.setText(scanedCode[9]);
         kppTextField.setEditable(false);
 
+      //  str = SetEncoding.encodeString(scanedCode[10]);
         adresTextField.setText(scanedCode[10]);
         adresTextField.setEditable(false);
 
+       // str = SetEncoding.encodeString(scanedCode[11]);
         importerTextField.setText(scanedCode[11]);
         importerTextField.setEditable(false);
 
+      //  str = SetEncoding.encodeString(scanedCode[12]);
         importFsrarTextField.setText(scanedCode[12]);
         importFsrarTextField.setEditable(false);
 
+     //   str = SetEncoding.encodeString(scanedCode[13]);
         importFullNameTextField.setText(scanedCode[13]);
         importFullNameTextField.setEditable(false);
 
+      //  str = SetEncoding.encodeString(scanedCode[14]);
         textField3.setText(scanedCode[14]);
         textField3.setEditable(false);
 
+       // str = SetEncoding.encodeString(scanedCode[15]);
         textField4.setText(scanedCode[15]);
         textField4.setEditable(false);
 
+       // str = SetEncoding.encodeString(scanedCode[16]);
         importAdresTextField.setText(scanedCode[16]);
         importAdresTextField.setEditable(false);
 

@@ -74,9 +74,12 @@ public class Workcbench extends JFrame {
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
-        SetEncoding encoding = new SetEncoding();
-        if(encoding.getEncodigStatus()){
-            requestInfo = encoding.encodeString(requestInfo);
+
+        //Перекодируем строку в cp1251 // FIXME: 23.10.16
+        //SetEncoding encoding = new SetEncoding();
+        SetEncoding.setSystem();
+        if(SetEncoding.getEncodigStatus()){
+            requestInfo = SetEncoding.encodeString(requestInfo);
         }
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();

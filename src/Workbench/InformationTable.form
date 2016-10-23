@@ -199,7 +199,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <font name="Garuda" style="2"/>
+                  <font swing-font="TextPane.font"/>
                 </properties>
               </component>
               <component id="d75b8" class="javax.swing.JTextField" binding="CodeClasstextField">
