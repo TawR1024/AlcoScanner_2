@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * Created by ilya-kulakov on 20.10.16.
+ * @deprecated since 2.0.1
  */
 public class SetEncoding {// TODO: 20.10.16 выполнять проверку в другом потоке. implements Runnable
 

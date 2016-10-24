@@ -77,10 +77,10 @@ public class Workcbench extends JFrame {
 
         //Перекодируем строку в cp1251 // FIXME: 23.10.16
         //SetEncoding encoding = new SetEncoding();
-        SetEncoding.setSystem();
-        if(SetEncoding.getEncodigStatus()){
-            requestInfo = SetEncoding.encodeString(requestInfo);
-        }
+//        SetEncoding.setSystem();
+//        if(SetEncoding.getEncodigStatus()){
+//            requestInfo = SetEncoding.encodeString(requestInfo);
+//        }
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
         InformationTable infoTable = new InformationTable(infoFields);

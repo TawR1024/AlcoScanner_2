@@ -5,6 +5,7 @@ import service.SetEncoding;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
+ * @version 2.0.1
  */
 public class Main {
     public static void main(String[] args) {

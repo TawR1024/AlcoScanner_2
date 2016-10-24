@@ -27,11 +27,10 @@ public class SendRequest {
 
     /**Запрашивает инфомрацию и усервера
      * @return inputLine Строка содержащая HTML ответ сервера. теги html и body удалены*/
-    // TODO: 24.10.16 Исправить декодирование при прёме входного потока. Поток получает БАЙТЫ
     public String getInfo()throws Exception{
         URL egais = new URL(finalUrl);
-        // FIXME: 24.10.16 BufferedReader(new InputStreamReader(egais.openStream(), INPUT ENCODING NAME)
-        BufferedReader inputBuffer = new BufferedReader(new InputStreamReader(egais.openStream()));
+        //кодировка выставлена верно
+        BufferedReader inputBuffer = new BufferedReader(new InputStreamReader(egais.openStream(),"UTF-8"));
         String inputLine;
         inputLine = inputBuffer.readLine();
         inputBuffer.close();
