@@ -49,7 +49,10 @@ public class Workcbench extends JFrame {
 
             }
         });
-
+        /*
+        TODO: 26.10.16  Проверить наличие корректора ввода. Tip: Добовамить обработчика на изменение текста вызывающ\
+        его кррректор
+        */
         RequestButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {

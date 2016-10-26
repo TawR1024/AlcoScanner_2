@@ -1,5 +1,6 @@
 package Workbench;
 
+
 /**
  * Created by ilya-kulakov on 19.10.16.
  *
@@ -12,7 +13,8 @@ package Workbench;
 public class PDF417Decoder {
 
         public String inputCode;
-        private String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int systemBase = 36;
 
         /**
          * @param scanedCode Строка в формате BASE36
@@ -23,23 +25,26 @@ public class PDF417Decoder {
 
         /**
          * @return finalCode Возвращате строку в BASE10
-         * @// TODO: 19.10.16 Проверить алгоритм вычисления. При извлечении код есть ошибка в конечных разрядах
          */
-        // FIXME: 23.10.16
         public String extractCode() {
             String finalCode;
             finalCode = inputCode.substring(4, 19);
+            System.out.print(finalCode);
 
-            int power = finalCode.length()-1;
-            int found = 0;
+            double power = finalCode.length()-1;
+            double found;
             long digit = 0;
             char arrChar[] = finalCode.toCharArray();
 
-            for (int i = 0; i < finalCode.length(); ++i) {
-                found = base_sys.indexOf(arrChar[i]);
-                digit += found * Math.pow(36, power);
+            for (int i = 0; i < arrChar.length; ++i) {
+                found =  base_sys.indexOf(arrChar[i]);
+                long sum = (long)(found * Math.pow(systemBase, power));
+                System.out.println(sum);
+                digit += (sum);
+                System.out.println(digit);
                 --power;
             }
+            System.out.print("\n"+digit);
             finalCode = Long.toString(digit);
             while (finalCode.length() < 19) {
                 finalCode = "0".concat(finalCode);
@@ -47,3 +52,6 @@ public class PDF417Decoder {
             return finalCode;
         }
 }
+//9223372036854775807
+//0177481000001526569
+//15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724
