@@ -1,10 +1,9 @@
 package Workbench;
 
-import service.SetEncoding;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.*;
 
 /**
  * Created by ilya-kulakov on 20.10.16.
@@ -47,11 +46,13 @@ public class InformationTable extends JFrame{
     private JTextField importFsrarTextField;
     private JScrollPane importFullName;
     private JTextField importFullNameTextField;
-    private JTextField textField3;
-    private JTextField textField4;
+    private JTextField importerInn;
+    private JTextField importerKpp;
     private JScrollPane importAdresPanel;
     private JTextField importAdresTextField;
     private JButton redactor;
+    private JButton Save;
+    private JButton Add;
     private String[] scanedCode;
 
     InformationTable(String[] code){
@@ -63,7 +64,7 @@ public class InformationTable extends JFrame{
 
         setScanedCode(code);
         setInformation();
-
+        Save.setVisible(true);
         redactor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -74,6 +75,19 @@ public class InformationTable extends JFrame{
                         JOptionPane.YES_NO_OPTION);
                 if(userChoose == JOptionPane.OK_OPTION ){
                     setEditable();
+                }
+            }
+        });
+        Save.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                DataBaseWorker adder = new DataBaseWorker();
+                try {
+                    adder.addNewInfo();
+                }catch (ClassNotFoundException cnfe) {
+                    cnfe.printStackTrace();
+                }catch (SQLClientInfoException ex){
+                    ex.printStackTrace();
                 }
             }
         });
@@ -112,9 +126,9 @@ public class InformationTable extends JFrame{
 
         importFullNameTextField.setEditable(true);
 
-        textField3.setEditable(true);
+        importerInn.setEditable(true);
 
-        textField4.setEditable(true);
+        importerKpp.setEditable(true);
 
         importAdresTextField.setEditable(true);
 
@@ -179,18 +193,80 @@ public class InformationTable extends JFrame{
         importFullNameTextField.setEditable(false);
 
       //  str = SetEncoding.encodeString(scanedCode[14]);
-        textField3.setText(scanedCode[14]);
-        textField3.setEditable(false);
+        importerInn.setText(scanedCode[14]);
+        importerInn.setEditable(false);
 
        // str = SetEncoding.encodeString(scanedCode[15]);
-        textField4.setText(scanedCode[15]);
-        textField4.setEditable(false);
+        importerKpp.setText(scanedCode[15]);
+        importerKpp.setEditable(false);
 
        // str = SetEncoding.encodeString(scanedCode[16]);
         importAdresTextField.setText(scanedCode[16]);
         importAdresTextField.setEditable(false);
 
-
     }
 
-}
+   public  class DataBaseWorker{
+        public void addNewInfo() throws ClassNotFoundException,SQLClientInfoException {
+            final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
+             final String user = "root";
+             final String password = "12345";
+
+            Connection con;
+            Statement stmt;
+            ResultSet rs;
+            Class.forName("com.mysql.jdbc.Driver");
+            String  qr = "INSERT INTO ProductBase.products(productName,alcoCode,codeClass,strength,volume,manufacture,fsrar,fullname,inn,kpp,adr,importer,impFsrar,impFullName,impInn,impKpp,impAdr)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String qr1 = "SELECT * FROM ProductBase.products WHERE alcoCode="+AlcoCodetextField.getText();
+            String qr2 = "UPDATE ProductBase.products SET  counter = counter + 1 WHERE alcoCode="+AlcoCodetextField.getText();
+
+                try {
+                    con = DriverManager.getConnection(url, user, password);
+                    PreparedStatement stmnt1 = con.prepareStatement(qr1);
+                    rs = stmnt1.executeQuery();
+                    if(rs.next()){
+                        PreparedStatement stmnt2 = con.prepareStatement(qr2);
+                        stmnt2.execute();
+                        JOptionPane.showConfirmDialog(
+                                rootPanel,
+                                "Количество товара увеличено.",
+                                "Information",
+                                JOptionPane.YES_OPTION);
+                    }
+                    else {
+                        PreparedStatement stmnt = con.prepareStatement(qr);
+                        stmnt.setString(1,nameTextField.getText());
+                        stmnt.setString(2,AlcoCodetextField.getText());
+                        stmnt.setString(3,CodeClasstextField.getText());
+                        stmnt.setString(4,StrengthtextField.getText());
+                        stmnt.setString(5,volumeTextField.getText());
+                        stmnt.setString(6,manufacturTextField.getText());
+                        stmnt.setString(7,fsrarTextField.getText());
+                        stmnt.setString(8,fullNameTextField.getText());
+                        stmnt.setString(9,innTextField.getText());
+                        stmnt.setString(10,kppTextField.getText());
+                        stmnt.setString(11,adresTextField.getText());
+                        stmnt.setString(12,importerTextField.getText());
+                        stmnt.setString(13,importFsrarTextField.getText());
+                        stmnt.setString(14,importFullNameTextField.getText());
+                        stmnt.setString(15,importerInn.getText());
+                        stmnt.setString(16,importerKpp.getText());
+                        stmnt.setString(17,importAdresTextField.getText());
+                        stmnt.execute();
+                        JOptionPane.showConfirmDialog(
+                                rootPanel,
+                                "Товар успешно внесён в базу",
+                                "Information",
+                                JOptionPane.YES_OPTION);
+                        }
+//                    //15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724
+//                    }//20N00001CGUMZYCB99J1NKN31105001000056NQQMS5VP4HTF5SB46ZSQQJD8BNJP891
+                    con.close();
+                    stmnt1.close();
+                } catch (SQLException sqlEx) {
+                    sqlEx.printStackTrace();
+                }
+            }
+        }
+    }
+

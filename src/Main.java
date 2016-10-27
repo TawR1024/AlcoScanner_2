@@ -1,6 +1,7 @@
 import Workbench.LookAndFeel;
 import Workbench.Workcbench;
 import service.IsInternetConnection;
+import service.LBaseConnector;
 import service.SetEncoding;
 
 /**
@@ -9,6 +10,11 @@ import service.SetEncoding;
  */
 public class Main {
     public static void main(String[] args) {
+        try {
+            LBaseConnector.LBaseConnector();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         LookAndFeel progStyle = new LookAndFeel();
         progStyle.setLookAndFeel();
 

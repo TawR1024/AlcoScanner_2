@@ -7,7 +7,7 @@ import java.net.URL;
 /**
  * Created by ilya-kulakov on 19.10.16.
  */
-public class SendRequest {
+public class SendRequest{
 
     /**Строка с URL базовго ресурса, для запроса инофрмации*/
     private String baseURL = "http://www.xn--80affoam1c.xn--p1ai/api/testscan.php?barcode=";
@@ -36,4 +36,9 @@ public class SendRequest {
         inputBuffer.close();
         return inputLine;
     }
+
+//    @Override
+//    public void run() {
+//
+//    }
 }

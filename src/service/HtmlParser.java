@@ -1,5 +1,7 @@
 package service;
 
+import javax.swing.*;
+
 /**
  * Created by ilya-kulakov on 20.10.16.
  */
@@ -28,6 +30,8 @@ public class HtmlParser {
 
     /**Исключает из HTML текста теги типа <br></br>*/
     private void prepareStirng(){
+        if(checkInfo()==false)
+            return;
         inputBuffer = inputBuffer.replace("</br>", "\n");
       //  inputBuffer = inputBuffer.replace("И","И");
     }
@@ -40,6 +44,9 @@ public class HtmlParser {
         while(i < lengthArr.length){
             startIndex = lengthArr[i] + endIndex;
             endIndex = inputBuffer.indexOf("\n",startIndex);
+            if(endIndex== startIndex){
+                str[i] = "";
+            }
             str[i] = inputBuffer.substring(startIndex, endIndex);
             endIndex +=1;
             ++i;
@@ -50,6 +57,19 @@ public class HtmlParser {
         prepareStirng();
         reedInfoFields();
         return str;
+    }
+
+    private boolean checkInfo(){
+        System.out.print(inputBuffer.contains("\n"));
+        if(inputBuffer.contains("Barcode") || inputBuffer.contains("\n")){//
+            JOptionPane.showMessageDialog(new JFrame(), "В базе ЕГАИС нет информации по данному товару",
+                    "EGAIS dataBase Error",
+                    JOptionPane.ERROR_MESSAGE);
+
+            return  false;
+        }else {
+            return true;
+        }
     }
 
 }
