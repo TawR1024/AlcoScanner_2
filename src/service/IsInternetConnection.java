@@ -59,7 +59,7 @@ public  class IsInternetConnection implements Runnable {
      * @param hostUrl Strig содержит адрес проверяемого ресурса. Может быть пустым*/
     public IsInternetConnection(String ... hostUrl){
         if(getInstance()!=null){
-            System.out.print("Instance Error. More then one object detected");
+          //  System.out.print("Instance Error. More then one object detected");
         }
         setDomain(hostUrl);
     }

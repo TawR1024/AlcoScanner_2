@@ -40,13 +40,16 @@ public class Workcbench extends JFrame {
         extractCodeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                alcoLable.setVisible(true);
                 InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
                 String str = corrector.getCorrecredCode();
+                if(str == null){
+                    PDF417codeField.setText("");
+                    return;
+                }
                 PDF417codeField.setText(str);
                 PDF417Decoder alcoCode = new PDF417Decoder(PDF417codeField.getText());
                 alcoCodeLable.setText(alcoCode.extractCode());
-
+                alcoLable.setVisible(true);
             }
         });
         /*
@@ -65,6 +68,7 @@ public class Workcbench extends JFrame {
         });
     }
 
+    // TODO: 26.10.16 Создавать новое окно в отдельном потоке. Вычисление ключа не должно мешать открывать базу и наоборот
     private void sendRequest(){
         String requestInfo="";
         try {
@@ -78,12 +82,7 @@ public class Workcbench extends JFrame {
             return;
         }
 
-        //Перекодируем строку в cp1251 // FIXME: 23.10.16
-        //SetEncoding encoding = new SetEncoding();
-//        SetEncoding.setSystem();
-//        if(SetEncoding.getEncodigStatus()){
-//            requestInfo = SetEncoding.encodeString(requestInfo);
-//        }
+
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
         InformationTable infoTable = new InformationTable(infoFields);

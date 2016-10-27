@@ -39,12 +39,9 @@ public class PDF417Decoder {
             for (int i = 0; i < arrChar.length; ++i) {
                 found =  base_sys.indexOf(arrChar[i]);
                 long sum = (long)(found * Math.pow(systemBase, power));
-                System.out.println(sum);
                 digit += (sum);
-                System.out.println(digit);
                 --power;
             }
-            System.out.print("\n"+digit);
             finalCode = Long.toString(digit);
             while (finalCode.length() < 19) {
                 finalCode = "0".concat(finalCode);
@@ -54,4 +51,4 @@ public class PDF417Decoder {
 }
 //9223372036854775807
 //0177481000001526569
-//15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724
+// 15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724

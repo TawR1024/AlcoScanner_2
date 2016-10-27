@@ -1,5 +1,7 @@
 package service;
 
+import javax.swing.*;
+
 /**
  * Created by ilya-kulakov on 20.10.16.
  * @author ilya-kulakov
@@ -10,8 +12,11 @@ public class InputCorrector {
     private String engAlpha = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
     private String inputCode;
 
-    public InputCorrector(String cyrilic){
+    public  InputCorrector(String cyrilic){
         setInputCode(cyrilic);
+        if (checkLength()==false){
+            return;
+        }
         correctInput();
     }
 
@@ -36,5 +41,17 @@ public class InputCorrector {
 
     public String getCorrecredCode(){
         return inputCode;
+    }
+
+    public boolean checkLength(){
+        System.out.print(inputCode.length());
+        if(inputCode.length()<68){
+            JOptionPane.showMessageDialog(new JFrame(), "Код продукта считан неверно.\n" +
+                            " Повторите ввод.",
+                    "Input Error",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+        inputCode = null;
+        return false;
     }
 }
