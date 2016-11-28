@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_alcoscanner_2" default="compile.module.alcoscanner_2">
+  <dirname property="module.alcoscanner_2.basedir" file="${ant.file.module_alcoscanner_2}"/>
+  
+  <property name="module.jdk.home.alcoscanner_2" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.alcoscanner_2" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.alcoscanner_2" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.alcoscanner_2" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="alcoscanner_2.output.dir" value="${module.alcoscanner_2.basedir}/out/production/AlcoScanner_2"/>
+  <property name="alcoscanner_2.testoutput.dir" value="${module.alcoscanner_2.basedir}/out/test/AlcoScanner_2"/>
+  
+  <path id="alcoscanner_2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="alcoscanner_2.module.production.classpath">
+    <path refid="${module.jdk.classpath.alcoscanner_2}"/>
+    <pathelement location="${idea.home}/redist/annotations-java8.jar"/>
+    <pathelement location="${basedir}/junit-4.7.jar"/>
+    <pathelement location="${idea.home}/lib/hamcrest-core-1.3.jar"/>
+    <pathelement location="${idea.home}/lib/junit-4.12.jar"/>
+  </path>
+  
+  <path id="alcoscanner_2.runtime.production.module.classpath">
+    <pathelement location="${alcoscanner_2.output.dir}"/>
+    <pathelement location="${idea.home}/redist/annotations-java8.jar"/>
+    <pathelement location="${basedir}/junit-4.7.jar"/>
+    <pathelement location="${idea.home}/lib/hamcrest-core-1.3.jar"/>
+    <pathelement location="${idea.home}/lib/junit-4.12.jar"/>
+  </path>
+  
+  <path id="alcoscanner_2.module.classpath">
+    <path refid="${module.jdk.classpath.alcoscanner_2}"/>
+    <pathelement location="${alcoscanner_2.output.dir}"/>
+    <pathelement location="${idea.home}/redist/annotations-java8.jar"/>
+    <pathelement location="${basedir}/junit-4.7.jar"/>
+    <pathelement location="${idea.home}/lib/hamcrest-core-1.3.jar"/>
+    <pathelement location="${idea.home}/lib/junit-4.12.jar"/>
+  </path>
+  
+  <path id="alcoscanner_2.runtime.module.classpath">
+    <pathelement location="${alcoscanner_2.testoutput.dir}"/>
+    <pathelement location="${alcoscanner_2.output.dir}"/>
+    <pathelement location="${idea.home}/redist/annotations-java8.jar"/>
+    <pathelement location="${basedir}/junit-4.7.jar"/>
+    <pathelement location="${idea.home}/lib/hamcrest-core-1.3.jar"/>
+    <pathelement location="${idea.home}/lib/junit-4.12.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.alcoscanner_2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.alcoscanner_2">
+    <patternset refid="excluded.from.module.alcoscanner_2"/>
+  </patternset>
+  
+  <path id="alcoscanner_2.module.sourcepath">
+    <dirset dir="${module.alcoscanner_2.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.alcoscanner_2" depends="compile.module.alcoscanner_2.production,compile.module.alcoscanner_2.tests" description="Compile module AlcoScanner_2"/>
+  
+  <target name="compile.module.alcoscanner_2.production" depends="register.custom.compilers" description="Compile module AlcoScanner_2; production classes">
+    <mkdir dir="${alcoscanner_2.output.dir}"/>
+    <javac2 destdir="${alcoscanner_2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.alcoscanner_2}/javac">
+      <compilerarg line="${compiler.args.alcoscanner_2}"/>
+      <bootclasspath refid="alcoscanner_2.module.bootclasspath"/>
+      <classpath refid="alcoscanner_2.module.production.classpath"/>
+      <src refid="alcoscanner_2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.alcoscanner_2"/>
+    </javac2>
+    
+    <copy todir="${alcoscanner_2.output.dir}">
+      <fileset dir="${module.alcoscanner_2.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.alcoscanner_2.tests" depends="register.custom.compilers,compile.module.alcoscanner_2.production" description="compile module AlcoScanner_2; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.alcoscanner_2" description="cleanup module">
+    <delete dir="${alcoscanner_2.output.dir}"/>
+    <delete dir="${alcoscanner_2.testoutput.dir}"/>
+  </target>
+</project>
