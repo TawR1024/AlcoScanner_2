@@ -6,8 +6,8 @@ package service;
  */
 public class InputCorrector {
 
-    private String rusAlpha = "йцукенгшщзхъфывапролджэячсмитьбю.";
-    private String engAlpha = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+    private String rusAlpha = "йцукенгшщзхъфывапролджэячсмить";
+    private String engAlpha = "qwertyuiop[]asdfghjkl;'zxcvbnm";
     private String inputCode;
 
     public InputCorrector(String cyrilic){

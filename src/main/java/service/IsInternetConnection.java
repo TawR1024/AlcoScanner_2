@@ -20,7 +20,6 @@ public  class IsInternetConnection implements Runnable {
     private static String host;
     /**
      * IP корнеового DNS сервера
-     *
      * */
     private static  String rootDNSip = "198.41.0.4";
     /**
@@ -116,8 +115,6 @@ public  class IsInternetConnection implements Runnable {
                     JOptionPane.WARNING_MESSAGE);
         }
     }
-
-    @Override
     /**Перегруженный метод класса Runnable*/
     public void run() {
         checkConnection();

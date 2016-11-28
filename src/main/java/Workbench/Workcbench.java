@@ -24,7 +24,7 @@ public class Workcbench extends JFrame {
     private JLabel alcoCodeLable;
     private JTextField PDF417codeField;
 
-    public Workcbench(){
+    public Workcbench() {
         super("Alco Scaner");
         setContentPane(rootPane);
         alcoLable.setVisible(false);
@@ -37,7 +37,6 @@ public class Workcbench extends JFrame {
 
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 getCode();
             }
@@ -47,7 +46,7 @@ public class Workcbench extends JFrame {
         его кррректор
         */
         RequestButton.addActionListener(new ActionListener() {
-            @Override
+           // @Override
             public void actionPerformed(ActionEvent actionEvent) {
 //                    IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
 //                    Thread nThread = new Thread(connection);
@@ -59,14 +58,13 @@ public class Workcbench extends JFrame {
         });
 
 
-
         PDF417codeField.addKeyListener(new KeyAdapter() {
             public void keyReleased(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     String code = getCode();
                     try {
-                        SerchInBase.SerchInBase(code);
-                        if (SerchInBase.isExist()) {
+                        SearchInBase.SearchInBase(code);
+                        if (SearchInBase.isExist()) {
                             JOptionPane.showMessageDialog(
                                     new JPanel(),
                                     "Количество товара увеличено.",
@@ -79,6 +77,7 @@ public class Workcbench extends JFrame {
                                     "Warning",
                                     JOptionPane.YES_NO_OPTION);
                             if (userChoose == JOptionPane.OK_OPTION) {
+                                System.out.print("Первый код из поля "+PDF417codeField.getText());
                                 requesToExternalBase();
                             }
                         }
@@ -93,10 +92,11 @@ public class Workcbench extends JFrame {
     }
 
     // TODO: 26.10.16 Создавать новое окно в отдельном потоке. Вычисление ключа не должно мешать открывать базу и наоборот
-    private void sendRequest(){
-        String requestInfo="";
+    private void sendRequest() {
+        String requestInfo = "";
         try {
             SendRequest request = new SendRequest(PDF417codeField.getText());
+            System.out.println("Код из поля" + PDF417codeField.getText());
             requestInfo = request.getInfo();
         } catch (Exception e1) {
             e1.printStackTrace();
@@ -115,23 +115,21 @@ public class Workcbench extends JFrame {
 
 
     @Nullable
-    private  String getCode(){
+    private String getCode() {
         InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
         String str = corrector.getCorrecredCode();
-        if(str == null){
-            PDF417codeField.setText(null);
+        if (str == null) {
             return null;
         }
         PDF417codeField.setText(str);
         PDF417Decoder alcoCode = new PDF417Decoder(PDF417codeField.getText());
-        PDF417codeField.setText(null);
         String code = alcoCode.extractCode();
         alcoCodeLable.setText(code);
         alcoLable.setVisible(true);
         return code;
     }
 
-    private void requesToExternalBase(){
+    private void requesToExternalBase() {
         IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
         Thread nThread = new Thread(connection);
         nThread.start();

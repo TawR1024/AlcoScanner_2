@@ -5,10 +5,15 @@ import java.sql.*;
 /**
  * Created by ilya-kulakov on 26.11.16.
  */
-public   class SerchInBase {
+public  class SearchInBase {
     public static String code;
 
-    public static void SerchInBase(String alCode) throws ClassNotFoundException, SQLClientInfoException {
+    /**
+     * @param alCode
+     * @throws ClassNotFoundException
+     * @throws SQLClientInfoException
+     */
+    public static void SearchInBase(String alCode) throws ClassNotFoundException, SQLClientInfoException {
         code = alCode;
     }
 
@@ -19,7 +24,6 @@ public   class SerchInBase {
 
     public static boolean isExist(){
         Connection connection;
-        //Statement statement;
         ResultSet resultSet;
         String qr2 = "UPDATE ProductBase.products SET  counter = counter + 1 WHERE alcoCode="+code;
         try {

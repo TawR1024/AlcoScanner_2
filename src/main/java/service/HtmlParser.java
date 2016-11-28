@@ -59,7 +59,7 @@ public class HtmlParser {
     }
 
     private boolean checkInfo(){
-        System.out.print(inputBuffer.contains("\n"));
+        System.out.print(inputBuffer);
         if(inputBuffer.contains("Barcode") || inputBuffer.contains("\n")|| inputBuffer.contains("Алко-код продукции")){//
             JOptionPane.showMessageDialog(new JFrame(), "В базе ЕГАИС нет информации по данному товару",
                     "EGAIS dataBase Error",
@@ -70,9 +70,4 @@ public class HtmlParser {
             return true;
         }
     }
-
-    public String getBuffer(){
-        return inputBuffer;
-    }
-
 }

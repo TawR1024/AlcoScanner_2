@@ -65,7 +65,7 @@ public class InformationTable extends JFrame {
         setInformation();
         Save.setVisible(true);
         redactor.addActionListener(new ActionListener() {
-            @Override
+           // @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int userChoose = JOptionPane.showConfirmDialog(
                         rootPanel,
@@ -78,7 +78,7 @@ public class InformationTable extends JFrame {
             }
         });
         Save.addActionListener(new ActionListener() {
-            @Override
+            //@Override
             public void actionPerformed(ActionEvent actionEvent) {
                 DataBaseWorker adder = new DataBaseWorker();
                 try {
@@ -221,8 +221,7 @@ public class InformationTable extends JFrame {
 
             try {
                 con = DriverManager.getConnection(url, user, password);
-                //PreparedStatement stmnt1 = con.prepareStatement(qr);
-               // rs = stmnt1.executeQuery();
+
                 PreparedStatement stmnt = con.prepareStatement(qr);
                 stmnt.setString(1, nameTextField.getText());
                 stmnt.setString(2, AlcoCodetextField.getText());
@@ -241,6 +240,7 @@ public class InformationTable extends JFrame {
                 stmnt.setString(15, importerInn.getText());
                 stmnt.setString(16, importerKpp.getText());
                 stmnt.setString(17, importAdresTextField.getText());
+                System.out.println(nameTextField.getText());
                 stmnt.execute();
                 JOptionPane.showConfirmDialog(
                         rootPanel,
