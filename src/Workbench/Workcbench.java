@@ -1,12 +1,17 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
+import org.jetbrains.annotations.Nullable;
 import service.HtmlParser;
 import service.InputCorrector;
 import service.IsInternetConnection;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.sql.SQLClientInfoException;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
@@ -34,16 +39,7 @@ public class Workcbench extends JFrame {
         extractCodeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
-                String str = corrector.getCorrecredCode();
-                if(str == null){
-                    PDF417codeField.setText("");
-                    return;
-                }
-                PDF417codeField.setText(str);
-                PDF417Decoder alcoCode = new PDF417Decoder(PDF417codeField.getText());
-                alcoCodeLable.setText(alcoCode.extractCode());
-                alcoLable.setVisible(true);
+                getCode();
             }
         });
         /*
@@ -53,12 +49,46 @@ public class Workcbench extends JFrame {
         RequestButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
-                Thread nThread = new Thread(connection);
-                nThread.start();
-                sendRequest();
+//                    IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
+//                    Thread nThread = new Thread(connection);
+//                    nThread.start();
+//                    sendRequest();
+                requesToExternalBase();
             }
 
+        });
+
+
+
+        PDF417codeField.addKeyListener(new KeyAdapter() {
+            public void keyReleased(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    String code = getCode();
+                    try {
+                        SerchInBase.SerchInBase(code);
+                        if (SerchInBase.isExist()) {
+                            JOptionPane.showMessageDialog(
+                                    new JPanel(),
+                                    "Количество товара увеличено.",
+                                    "Information",
+                                    JOptionPane.YES_OPTION);
+                        }
+                    } catch (ClassNotFoundException e1) {
+                        e1.printStackTrace();
+                    } catch (SQLClientInfoException e1) {
+                        e1.printStackTrace();
+                    }
+                } else {
+                    int userChoose = JOptionPane.showConfirmDialog(
+                            new JPanel(),
+                            "Товар не найден.\nХотите запросить информацию из базы ЕГАИС?",
+                            "Warning",
+                            JOptionPane.YES_NO_OPTION);
+                    if (userChoose == JOptionPane.OK_OPTION) {
+                        requesToExternalBase();
+                    }
+                }
+            }
         });
     }
 
@@ -81,6 +111,31 @@ public class Workcbench extends JFrame {
         String[] infoFields = parser.parsing();
         InformationTable infoTable = new InformationTable(infoFields);
         infoTable.setLocationRelativeTo(null);
+    }
+
+
+    @Nullable
+    private  String getCode(){
+        InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
+        String str = corrector.getCorrecredCode();
+        if(str == null){
+            PDF417codeField.setText(null);
+            return null;
+        }
+        PDF417codeField.setText(str);
+        PDF417Decoder alcoCode = new PDF417Decoder(PDF417codeField.getText());
+        PDF417codeField.setText(null);
+        String code = alcoCode.extractCode();
+        alcoCodeLable.setText(code);
+        alcoLable.setVisible(true);
+        return code;
+    }
+
+    private void requesToExternalBase(){
+        IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
+        Thread nThread = new Thread(connection);
+        nThread.start();
+        sendRequest();
     }
 
 }

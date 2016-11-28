@@ -2,7 +2,6 @@ import Workbench.LookAndFeel;
 import Workbench.Workcbench;
 import service.IsInternetConnection;
 import service.LBaseConnector;
-import service.SetEncoding;
 
 /**
  * Created by ilya-kulakov on 19.10.16.

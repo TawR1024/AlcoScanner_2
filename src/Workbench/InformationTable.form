@@ -384,14 +384,6 @@
                   <text value="Добавить"/>
                 </properties>
               </component>
-              <component id="7c505" class="javax.swing.JButton" binding="Add">
-                <constraints>
-                  <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Внести"/>
-                </properties>
-              </component>
             </children>
           </grid>
         </children>
