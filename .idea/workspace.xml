@@ -6,84 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f92501d8-ec4d-4b0b-a7a4-78812b14c028" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/DataBaseWorker_.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/junit-4.7.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/LogIn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" afterPath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/EgaisConnector/SendRequest.class" afterPath="$PROJECT_DIR$/target/classes/EgaisConnector/SendRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$DataBaseWorker.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$DataBaseWorker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/PDF417Decoder.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/PDF417Decoder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/InputCorrector.class" afterPath="$PROJECT_DIR$/target/classes/service/InputCorrector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workcbench.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workcbench.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/SendRequest.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/SendRequest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/class-use/SendRequest.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/class-use/SendRequest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-summary.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-tree.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-use.html" afterPath="$PROJECT_DIR$/JavaDOc/EgaisConnector/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Main.html" afterPath="$PROJECT_DIR$/JavaDOc/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/InformationTable.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/InformationTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/LookAndFeel.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/LookAndFeel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/PDF417Decoder.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/PDF417Decoder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/Workcbench.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/Workcbench.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/InformationTable.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/InformationTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/LookAndFeel.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/LookAndFeel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/PDF417Decoder.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/PDF417Decoder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/Workcbench.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/class-use/Workcbench.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/package-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/package-summary.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/package-tree.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/Workbench/package-use.html" afterPath="$PROJECT_DIR$/JavaDOc/Workbench/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/allclasses-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/JavaDOc/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/class-use/Main.html" afterPath="$PROJECT_DIR$/JavaDOc/class-use/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/constant-values.html" afterPath="$PROJECT_DIR$/JavaDOc/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/deprecated-list.html" afterPath="$PROJECT_DIR$/JavaDOc/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/help-doc.html" afterPath="$PROJECT_DIR$/JavaDOc/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-1.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-10.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-11.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-2.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-3.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-4.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-5.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-6.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-7.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-8.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index-files/index-9.html" afterPath="$PROJECT_DIR$/JavaDOc/index-files/index-9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/index.html" afterPath="$PROJECT_DIR$/JavaDOc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/overview-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/overview-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/overview-summary.html" afterPath="$PROJECT_DIR$/JavaDOc/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/overview-tree.html" afterPath="$PROJECT_DIR$/JavaDOc/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/package-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/package-summary.html" afterPath="$PROJECT_DIR$/JavaDOc/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/package-tree.html" afterPath="$PROJECT_DIR$/JavaDOc/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/package-use.html" afterPath="$PROJECT_DIR$/JavaDOc/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/serialized-form.html" afterPath="$PROJECT_DIR$/JavaDOc/serialized-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/HtmlParser.html" afterPath="$PROJECT_DIR$/JavaDOc/service/HtmlParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/InputCorrector.html" afterPath="$PROJECT_DIR$/JavaDOc/service/InputCorrector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/IsInternetConnection.html" afterPath="$PROJECT_DIR$/JavaDOc/service/IsInternetConnection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/SetEncoding.html" afterPath="$PROJECT_DIR$/JavaDOc/service/SetEncoding.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/class-use/HtmlParser.html" afterPath="$PROJECT_DIR$/JavaDOc/service/class-use/HtmlParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/class-use/InputCorrector.html" afterPath="$PROJECT_DIR$/JavaDOc/service/class-use/InputCorrector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/class-use/IsInternetConnection.html" afterPath="$PROJECT_DIR$/JavaDOc/service/class-use/IsInternetConnection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/class-use/SetEncoding.html" afterPath="$PROJECT_DIR$/JavaDOc/service/class-use/SetEncoding.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/package-frame.html" afterPath="$PROJECT_DIR$/JavaDOc/service/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/package-summary.html" afterPath="$PROJECT_DIR$/JavaDOc/service/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/package-tree.html" afterPath="$PROJECT_DIR$/JavaDOc/service/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/service/package-use.html" afterPath="$PROJECT_DIR$/JavaDOc/service/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/EgaisConnector/SendRequest.java" afterPath="$PROJECT_DIR$/src/main/java/EgaisConnector/SendRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" afterPath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form" afterPath="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" afterPath="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" />
     </list>
     <ignored path="AlcoScanner_2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,11 +45,9 @@
       <file leaf-file-name="Workcbench.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="method#sendRequest#0;class#Workcbench#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Workcbench.form" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Workcbench.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
@@ -156,11 +82,12 @@
       <file leaf-file-name="InformationTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="486">
+              <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#InformationTable#0" expanded="false" />
+                <element signature="e#2982#2983#0" expanded="true" />
                 <element signature="e#3017#3858#0" expanded="true" />
                 <element signature="e#3857#3858#0" expanded="true" />
                 <element signature="method#setEditable#0;class#InformationTable#0" expanded="false" />
@@ -172,10 +99,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InformationTable.form" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InformationTable.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogIn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/LogIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -263,11 +204,12 @@
         <option value="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/DataBaseWorker_.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Updater.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
+        <option value="$PROJECT_DIR$/src/main/java/service/LogIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
       </list>
     </option>
   </component>
@@ -347,220 +289,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workcbench" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTable" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaseReader" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -569,7 +298,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/HtmlParser.java&#10;conne&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/IsInternetConnection.java" />
@@ -1212,7 +941,7 @@
       <workItem from="1480365584513" duration="186000" />
       <workItem from="1480414874336" duration="12770000" />
       <workItem from="1480509208668" duration="504000" />
-      <workItem from="1480510702464" duration="6700000" />
+      <workItem from="1480510702464" duration="9700000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен todo">
       <created>1476921923137</created>
@@ -1320,7 +1049,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179996000" />
+    <option name="totallyTimeSpent" value="182996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1332,8 +1061,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1865" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="55" y="24" width="1865" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1343,17 +1072,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810021" sideWeight="0.4442001" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985157" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0020876827" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0020876827" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22100055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18746564" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146138" sideWeight="0.49807587" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13987474" sideWeight="0.49807587" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1376,17 +1105,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5146138" sideWeight="0.49807587" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5146138" sideWeight="0.49807587" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48927984" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34133613" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0020876827" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09290188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22100055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1443,8 +1172,14 @@
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="73" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1453,7 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/service/CheckInputCode.java" />
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/sql/DriverManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5148">
@@ -1727,8 +1461,8 @@
         <state relative-caret-position="376">
           <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1772,23 +1506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#InformationTable#0" expanded="false" />
-            <element signature="e#3017#3858#0" expanded="true" />
-            <element signature="e#3857#3858#0" expanded="true" />
-            <element signature="method#setEditable#0;class#InformationTable#0" expanded="false" />
-            <element signature="method#setInformation#0;class#InformationTable#0" expanded="false" />
-            <element signature="method#addNewInfo#0;class#DataBaseWorker#0;class#InformationTable#0" expanded="false" />
-            <marker date="1480513850185" expanded="true" signature="8449:8660" ph="INSERT INTO ProductBase.products... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1810,7 +1527,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/InputCorrector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1820,25 +1557,33 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/InputCorrector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="336">
+          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
           <folding>
-            <element signature="method#sendRequest#0;class#Workcbench#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#InformationTable#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="true" />
+            <element signature="e#3017#3858#0" expanded="true" />
+            <element signature="e#3857#3858#0" expanded="true" />
+            <element signature="method#setEditable#0;class#InformationTable#0" expanded="false" />
+            <element signature="method#setInformation#0;class#InformationTable#0" expanded="false" />
+            <element signature="method#addNewInfo#0;class#DataBaseWorker#0;class#InformationTable#0" expanded="false" />
+            <marker date="1480513850185" expanded="true" signature="8449:8660" ph="INSERT INTO ProductBase.products... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
