@@ -1,6 +1,10 @@
 package Workbench;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -52,18 +56,21 @@ public class InformationTable extends JFrame {
     private JTextField importAdresTextField;
     private JButton redactor;
     private JButton Save;
+    private JButton btnImg;
     private String[] scanedCode;
 
-    InformationTable(String[] code) {
+
+        InformationTable(String[] code) {
         super("Show Info");
         setContentPane(rootPanel);
         pack();
         setVisible(true);
         setResizable(false);
-
         setScanedCode(code);
         setInformation();
         Save.setVisible(true);
+       // btnImg.setIcon(new ImageIcon(getClass().getResource("/home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/main/resources/arrow_large_left.png")));
+
         redactor.addActionListener(new ActionListener() {
            // @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -88,9 +95,27 @@ public class InformationTable extends JFrame {
                 }catch (SQLClientInfoException ex){
                     ex.printStackTrace();
                 }
+//                Updater updater = new Updater();
+//                try {
+//                    updater.DataBaseWorker();
+//                    updater.
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                } catch (SQLClientInfoException e) {
+//                    e.printStackTrace();
+//                }
             }
         });
-    }
+//            try {
+//                Image img = ImageIO.read(getClass().getResource("/resources/arrow_large_left.png"));
+//                btnImg.setIcon(new ImageIcon(img));
+//            } catch (Exception ex) {
+//                System.out.println("ТРАБЛА " + ex);
+//            }
+
+           // btnImg.setRolloverIcon(new ImageIcon("/home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/main/resources/RArrow.gif"));
+
+        }
 
 
     private void setScanedCode(String[] code) {
@@ -214,9 +239,10 @@ public class InformationTable extends JFrame {
             final String password = "12345";
 
             Connection con;
+            Class.forName("com.mysql.jdbc.Driver");
+
             Statement stmt;
             ResultSet rs;
-            Class.forName("com.mysql.jdbc.Driver");
             String qr = "INSERT INTO ProductBase.products(productName,alcoCode,codeClass,strength,volume,manufacture,fsrar,fullname,inn,kpp,adr,importer,impFsrar,impFullName,impInn,impKpp,impAdr)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             try {
@@ -240,7 +266,7 @@ public class InformationTable extends JFrame {
                 stmnt.setString(15, importerInn.getText());
                 stmnt.setString(16, importerKpp.getText());
                 stmnt.setString(17, importAdresTextField.getText());
-                System.out.println(nameTextField.getText());
+//                System.out.println(nameTextField.getText());
                 stmnt.execute();
                 JOptionPane.showConfirmDialog(
                         rootPanel,
@@ -256,6 +282,16 @@ public class InformationTable extends JFrame {
                 sqlEx.printStackTrace();
             }
         }
+    }
+
+
+
+
+    public  String  getProductName(){
+        return  nameTextField.getText();
+    }
+    public String getAlcoCode(){
+        return  AlcoCodetextField.getText();
     }
 }
 

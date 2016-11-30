@@ -34,7 +34,6 @@ public class Workcbench extends JFrame {
         setSize(500, 200);
         extractCodeButton.setVisible(true);
 
-
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {

@@ -4,48 +4,63 @@ package Workbench;
 /**
  * Created by ilya-kulakov on 19.10.16.
  *
- * Класс реализующий расщифровку строки
- * получаемой при чтении штрихкода формата PDF417
- * @author ilya-kulakov 
+ * <p></>Класс реализующий расшифровку строки получаемой при чтении штрихкода формата PDF417</p>
+ * @author Ilya Kulakov Eltech/group/4308 10/19/16
  * @version 2.0
- *
  */
 public class PDF417Decoder {
 
-        public String inputCode;
-        String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int systemBase = 36;
+    /**
+     * Строка содержащая код в формате BASE36
+     */
+    public String inputCode;
+    /**
+     * Строка содержащая все цифры 36-ричной системы счисления
+     */
+    String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * Основание системы
+     */
+    final int systemBase = 36;
 
-        /**
-         * @param scanedCode Строка в формате BASE36
-         */
-        public PDF417Decoder(String scanedCode) {
-            inputCode = scanedCode;
-        }
+    /**
+     * Констуктор класса PDF417Decoder
+     *
+     * @param scanedCode Строка в формате BASE36
+     */
+    public PDF417Decoder(String scanedCode) {
+        inputCode = scanedCode;
+    }
 
-        /**
-         * @return finalCode Возвращате строку в BASE10
-         */
-        public String extractCode() {
-            String finalCode;
+    /**
+     * Извлекает из переданной на вход строки код продукции.
+     * Возвращает строку содержащую отформатированный код продукта.
+     *
+     * @return finalCode Возвращате строку в BASE10
+     */
+    public String extractCode() {
+        String finalCode;
+        double found;
+        long digit = 0;
+        try {
             finalCode = inputCode.substring(4, 19);
-            System.out.print(finalCode);
-
-            double power = finalCode.length()-1;
-            double found;
-            long digit = 0;
+            double power = finalCode.length() - 1;
             char arrChar[] = finalCode.toCharArray();
 
             for (int i = 0; i < arrChar.length; ++i) {
-                found =  base_sys.indexOf(arrChar[i]);
-                long sum = (long)(found * Math.pow(systemBase, power));
+                found = base_sys.indexOf(arrChar[i]);
+                long sum = (long) (found * Math.pow(systemBase, power));
                 digit += (sum);
                 --power;
             }
-            finalCode = Long.toString(digit);
-            while (finalCode.length() < 19) {
-                finalCode = "0".concat(finalCode);
-            }
-            return finalCode;
+        } catch (ArrayIndexOutOfBoundsException outOfRange) {
+                outOfRange.printStackTrace();
+            return null;
         }
+        finalCode = Long.toString(digit);
+        while (finalCode.length() < 19) {
+            finalCode = "0".concat(finalCode);
+        }
+        return finalCode;
+    }
 }
