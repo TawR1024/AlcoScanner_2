@@ -366,7 +366,8 @@
                   <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Редактировать"/>
+                  <icon value="pencil.png"/>
+                  <text value="&amp;Редактировать"/>
                 </properties>
               </component>
               <hspacer id="61e21">
@@ -376,12 +377,13 @@
                   </grid>
                 </constraints>
               </hspacer>
-              <component id="84e77" class="javax.swing.JButton" binding="btnImg">
+              <component id="cd077" class="javax.swing.JButton" binding="Save">
                 <constraints>
-                  <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Button"/>
+                  <icon value="pluss.png"/>
+                  <text value="Добавить"/>
                 </properties>
               </component>
             </children>

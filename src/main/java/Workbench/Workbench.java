@@ -16,7 +16,7 @@ import java.sql.SQLClientInfoException;
 /**
  * Created by ilya-kulakov on 19.10.16.
  */
-public class Workcbench extends JFrame {
+public class Workbench extends JFrame {
     private JPanel rootPane;
     private JButton extractCodeButton;
     private JButton RequestButton;
@@ -24,7 +24,7 @@ public class Workcbench extends JFrame {
     private JLabel alcoCodeLable;
     private JTextField PDF417codeField;
 
-    public Workcbench() {
+    public Workbench() {
         super("Alco Scaner");
         setContentPane(rootPane);
         alcoLable.setVisible(false);
@@ -40,10 +40,10 @@ public class Workcbench extends JFrame {
                 getCode();
             }
         });
-        /*
-        TODO: 26.10.16  Проверить наличие корректора ввода. Tip: Добовамить обработчика на изменение текста вызывающ\
-        его кррректор
-        */
+
+
+        //TODO: 26.10.16  Проверить наличие корректора ввода. Tip: Добовамить обработчика на изменение текста вызывающего корректор
+
         RequestButton.addActionListener(new ActionListener() {
            // @Override
             public void actionPerformed(ActionEvent actionEvent) {

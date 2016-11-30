@@ -1,19 +1,18 @@
 import Workbench.LookAndFeel;
-import Workbench.Workcbench;
+import Workbench.Workbench;
 import service.IsInternetConnection;
-import service.LBaseConnector;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
- * @version 2.0.1
+ * @version 2.1.0
  */
 public class Main {
     public static void main(String[] args) {
-        try {
-            LBaseConnector.LBaseConnector();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            LBaseConnector.LBaseConnector();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
         LookAndFeel progStyle = new LookAndFeel();
         progStyle.setLookAndFeel();
 
@@ -21,7 +20,7 @@ public class Main {
         Thread nThread = new Thread(connection);
         nThread.start();
 
-        Workcbench workplace = new Workcbench();
+        Workbench workplace = new Workbench();
         workplace.setLocationRelativeTo(null);
     }
 

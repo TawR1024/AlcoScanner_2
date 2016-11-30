@@ -1,12 +1,9 @@
 package Workbench;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 import java.sql.*;
 
 /**
@@ -56,7 +53,6 @@ public class InformationTable extends JFrame {
     private JTextField importAdresTextField;
     private JButton redactor;
     private JButton Save;
-    private JButton btnImg;
     private String[] scanedCode;
 
 
@@ -268,11 +264,21 @@ public class InformationTable extends JFrame {
                 stmnt.setString(17, importAdresTextField.getText());
 //                System.out.println(nameTextField.getText());
                 stmnt.execute();
-                JOptionPane.showConfirmDialog(
-                        rootPanel,
-                        "Товар успешно внесён в базу",
-                        "Information",
-                        JOptionPane.YES_OPTION);
+                try {
+                    URL imgURL = InformationTable.class.getResource("/resources/Symbol_-_Check.png");
+                    ImageIcon icon = new ImageIcon(imgURL);
+                    JOptionPane.showMessageDialog(rootPanel,
+                            "Товар:\n"+nameTextField.getText()+" сохранён в базу.",
+                            "Товар добавлен", JOptionPane.INFORMATION_MESSAGE,
+                            icon);
+                }catch (NullPointerException e){
+                    System.out.print( "нет изображения" );
+                }
+//                JOptionPane.showConfirmDialog(
+//                        rootPanel,
+//                        "Товар успешно внесён в базу",
+//                        "Information",
+//                        JOptionPane.YES_OPTION,icon);
 
 //                    //15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724
 //                    }//20N00001CGUMZYCB99J1NKN31105001000056NQQMS5VP4HTF5SB46ZSQQJD8BNJP891

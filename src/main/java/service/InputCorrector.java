@@ -3,7 +3,7 @@ package service;
 /**
  *
  * Корректирует считанный код.
- * <p>Код акцизы может быть считан сканером или вписан руками {@see Workbench.Workcbench#PDF417codeField}</p>
+ * <p>Код акцизы может быть считан сканером или вписан руками {@see Workbench.Workbench#PDF417codeField}</p>
  * <p>Корректируется код введённый кирилицей.</p>
  *
  * @author Ilya Kulakov Eltech/group/4308
