@@ -33,14 +33,18 @@ public  class SearchInBase {
             PreparedStatement statement = connection.prepareStatement(qr1);
             resultSet = statement.executeQuery();
             if(resultSet.next()){
+                System.out.println( "Дич" );
                 PreparedStatement stmnt2 = connection.prepareStatement(qr2);
                stmnt2.execute();
             }else{
+
+                connection.close();
                 return false;
             }
             connection.close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            System.out.println( "SUCK" );
         }catch (SQLException sqlErr){
 
         }

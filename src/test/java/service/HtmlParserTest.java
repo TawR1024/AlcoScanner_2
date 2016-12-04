@@ -38,7 +38,7 @@ public class HtmlParserTest {
                 " Ш1; здание арт. скважины № 4, лит. Т; здание арт. скважины № 3 лит. Р; цех приготовления водки,лит. Н; административное здание, лит. Е; нежилое здание - ремонтно-техническая"+
                 " база, лит. Б; нежилое здание - склад № 2, лит. К; склад ТМЦ, лит. О,</br></br>Импортер: </br>FSRAR_ID: </br>Полн. наим.: </br>ИНН: </br>КПП: </br>Адрес: </br>";
          htmlParser = new HtmlParser(input);
-        assertNull("Объект не создан", htmlParser);
+        assertNotNull("Объект не создан", htmlParser);
     }
     @Test
     public void Testparsing() throws Exception {

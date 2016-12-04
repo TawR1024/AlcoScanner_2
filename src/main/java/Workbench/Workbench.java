@@ -23,6 +23,7 @@ public class Workbench extends JFrame {
     private JLabel alcoLable;
     private JLabel alcoCodeLable;
     private JTextField PDF417codeField;
+    private JButton baseBtn;
 
     public Workbench() {
         super("Alco Scaner");
@@ -31,7 +32,7 @@ public class Workbench extends JFrame {
         pack();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setSize(500, 200);
+        setSize(500, 300);
         extractCodeButton.setVisible(true);
 
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
@@ -88,6 +89,12 @@ public class Workbench extends JFrame {
                 }
             }
         });
+        baseBtn.addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                BaseReader baseReader = new BaseReader();
+                baseReader.setLocationRelativeTo( null );
+            }
+        } );
     }
 
     // TODO: 26.10.16 Создавать новое окно в отдельном потоке. Вычисление ключа не должно мешать открывать базу и наоборот

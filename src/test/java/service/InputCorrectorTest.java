@@ -21,7 +21,7 @@ public class InputCorrectorTest {
         String input = "йцукенгшщзхъфывапролджэячсмить";
 
         inputCorrector = new InputCorrector(input);
-        assertNull("Обьект не созда", inputCorrector);
+        assertNotNull( "Обьект не созда", inputCorrector);
     }
     @Test
     public void getCorrecredCode() throws Exception {
