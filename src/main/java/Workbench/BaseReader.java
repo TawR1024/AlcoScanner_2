@@ -2,9 +2,13 @@ package Workbench;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.*;
+import com.itextpdf.text.Font;
 import com.itextpdf.text.pdf.*;
 import com.itextpdf.text.Document;
 
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import java.awt.*;
 import java.io.*;
 
 import javax.swing.*;
@@ -66,6 +70,8 @@ public class BaseReader extends JFrame {
     private JButton searchByCodeBtn;
     private JButton SaveReportBtn;
 
+    String path;
+
     final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
     final String user = "root";
     final String password = "12345";
@@ -118,71 +124,158 @@ public class BaseReader extends JFrame {
 
         SaveReportBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-                //MyFrame frame = new MyFrame();
-                com.itextpdf.text.Document document = new com.itextpdf.text.Document( PageSize.A4, 50, 50, 50, 50 );
+                MyFrame frame = new MyFrame();
+
+                BaseFont bf = null;
+                BaseFont anchorFnt = null;
                 try {
-                    PdfWriter writer = PdfWriter.getInstance( document, new FileOutputStream( "/home/ilya-kulakov/Рабочий стол/mydoc" ) );
+                    bf = BaseFont.createFont( "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
+                    Font customFont;
+                    //bf = BaseFont.createFont(new FileInputStream(getResourceAsStream("fonts/arial.ttf")), BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
+
+                    anchorFnt = BaseFont.createFont( "/usr/share/fonts/truetype/msttcorefonts/arialbd.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
+                } catch (DocumentException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Font simplefont = new Font( bf );
+                Font titleFont = new Font( anchorFnt );
+                Document document = new Document( PageSize.A4, 50, 50, 50, 50 );
+                try {
+                    PdfWriter writer = PdfWriter.getInstance( document, new FileOutputStream( path + "/Отчёт по товарам" ) );
                 } catch (DocumentException e) {
                     e.printStackTrace();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
                 document.open();
-                Anchor anchorTarget = new Anchor( "Информация по товарам" );
+                Anchor anchorTarget = new Anchor( "Информация по товарам", titleFont );
                 anchorTarget.setName( "BackToTop" );
                 Paragraph paragraph1 = new Paragraph();
-                paragraph1.setSpacingBefore( 50 );
+                paragraph1.setSpacingBefore( 60 );
                 paragraph1.add( anchorTarget );
+                paragraph1.setAlignment( Element.ALIGN_CENTER );
                 try {
                     document.add( paragraph1 );
                 } catch (DocumentException e) {
                     e.printStackTrace();
                 }
-
+                ResultSet set;
                 try {
-                    /*для винды c:/Windows/Fonts/arial.ttf*/
-                    ResultSet set = getAllBase();
-                    final BaseFont bf = BaseFont.createFont( "/usr/share/fonts/truetype/msttcorefonts/arialbd.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
-                    Font font1 = new Font( bf );
-                    //Font font1 = new Font(F, 14, Font.BOLD,new CMYKColor(0, 255, 0, 0));
-                    // document.add(new Paragraph("ПИЗДА.", FontFactory.getFont(FontFactory.COURIER, 14, Font.BOLD,	new CMYKColor(0, 255, 0, 0))));
-//                    document.add(new Paragraph("Аффтар, зохавай исчё тех аццких олбанских креведок, да выпей йаду.", font1));]
-                    System.out.print( "Come" );
-                    String str = "";
-                    if (set.next()) {
-                        document.add( new Paragraph( set.getString( "productName" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "alcoCode" ) , font1) );
-                        document.add( new Paragraph( set.getString( "codeClass" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "strength" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "volume" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "manufacture" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "fsrar" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "fullname" ), font1 ) );
-                        document.add( new Paragraph( set.getString( "adr" ), font1 ) );
+                    set = getAllBase();
+                    int i =1;
+                    while (set.next()) {
+
+
+                        PdfPTable table = new PdfPTable( 2 );
+                        PdfPCell cell1 = new PdfPCell( new Paragraph( "Наименование", simplefont ) );
+                        PdfPCell cell2 = new PdfPCell( new Paragraph( set.getString( "productName" ), simplefont ) );
+
+                        PdfPCell cell3 = new PdfPCell( new Paragraph( "Алко код", simplefont ) );
+                        PdfPCell cell4 = new PdfPCell( new Paragraph( set.getString( "alcoCode" ), simplefont ) );
+
+                        PdfPCell cell5 = new PdfPCell( new Paragraph("Код вида", simplefont ) );
+                        PdfPCell cell6 = new PdfPCell( new Paragraph( set.getString( "codeClass" ), simplefont ) );
+
+                        PdfPCell cell7 = new PdfPCell( new Paragraph("Крепость", simplefont ) );
+                        PdfPCell cell8 = new PdfPCell( new Paragraph(set.getString( "strength" ), simplefont ) );
+
+                        PdfPCell cell9 = new PdfPCell( new Paragraph("Объём", simplefont ) );
+                        PdfPCell cell10 = new PdfPCell( new Paragraph(set.getString( "volume" ), simplefont ) );
+
+                        PdfPCell cell11 = new PdfPCell( new Paragraph("Производитель", simplefont ) );
+                        PdfPCell cell12 = new PdfPCell( new Paragraph(set.getString( "manufacture" ), simplefont ) );
+
+                        PdfPCell cell13 = new PdfPCell( new Paragraph("FSRAR_ID", simplefont ) );
+                        PdfPCell cell14 = new PdfPCell( new Paragraph(set.getString( "fsrar" ), simplefont ) );
+
+                        PdfPCell cell15 = new PdfPCell( new Paragraph("Полное наименование", simplefont ) );
+                        PdfPCell cell16 = new PdfPCell( new Paragraph(set.getString( "fullname" ), simplefont ) );
+
+                        PdfPCell cell17 = new PdfPCell( new Paragraph( "ИНН", simplefont ) );
+                        PdfPCell cell18 = new PdfPCell( new Paragraph(set.getString( "inn" ), simplefont ) );
+
+                        PdfPCell cell19 = new PdfPCell( new Paragraph("КПП", simplefont ) );
+                        PdfPCell cell20 = new PdfPCell( new Paragraph(set.getString( "kpp" ), simplefont ) );
+
+                        PdfPCell cell21 = new PdfPCell( new Paragraph("Адрес", simplefont ) );
+                        PdfPCell cell22 = new PdfPCell( new Paragraph(set.getString( "adr" ), simplefont ) );
+
+                        PdfPCell cell23 = new PdfPCell( new Paragraph("Импортёр", simplefont ) );
+                        PdfPCell cell24 = new PdfPCell( new Paragraph(set.getString( "importer" ), simplefont ) );
+
+                        PdfPCell cell25 = new PdfPCell( new Paragraph("FSRAR_ID", simplefont ) );
+                        PdfPCell cell26 = new PdfPCell( new Paragraph(set.getString( "impFsrar" ), simplefont ) );
+
+                        PdfPCell cell27 = new PdfPCell( new Paragraph( "Полное наименование", simplefont ) );
+                        PdfPCell cell28 = new PdfPCell( new Paragraph(set.getString( "impFullName" ), simplefont ) );
+
+                        PdfPCell cell29 = new PdfPCell( new Paragraph("ИНН", simplefont ) );
+                        PdfPCell cell30 = new PdfPCell( new Paragraph(set.getString( "impInn" ), simplefont ) );
+
+                        PdfPCell cell31 = new PdfPCell( new Paragraph("КПП", simplefont ) );
+                        PdfPCell cell32 = new PdfPCell( new Paragraph(set.getString( "impKpp" ), simplefont ) );
+
+                        PdfPCell cell33 = new PdfPCell( new Paragraph("Адрес", simplefont ) );
+                        PdfPCell cell34 = new PdfPCell( new Paragraph(set.getString( "impAdr" )., simplefont ) );
+
+
+                        table.addCell( cell1 );
+                        table.addCell( cell2 );
+                        table.addCell( cell3 );
+                        table.addCell( cell4 );
+                        table.addCell( cell5 );
+                        table.addCell( cell6 );
+                        table.addCell( cell7 );
+                        table.addCell( cell8 );
+                        table.addCell( cell9 );
+                        table.addCell( cell10 );
+                        table.addCell( cell11 );
+                        table.addCell( cell12);
+                        table.addCell( cell13 );
+                        table.addCell( cell14);
+                        table.addCell( cell15 );
+                        table.addCell( cell16 );
+                        table.addCell( cell17 );
+                        table.addCell( cell18 );
+                        table.addCell( cell19 );
+                        table.addCell( cell20 );
+                        table.addCell( cell21 );
+                        table.addCell( cell22 );
+                        table.addCell( cell23 );
+                        table.addCell( cell24 );
+                        table.addCell( cell25 );
+                        table.addCell( cell26 );
+                        table.addCell( cell27 );
+                        table.addCell( cell28 );
+                        table.addCell( cell29 );
+                        table.addCell( cell30 );
+                        table.addCell( cell31 );
+                        table.addCell( cell32);
+                        table.addCell( cell33);
+                        table.addCell( cell34 );
+
+                        Anchor anchorTarget1 = new Anchor( "Товар № "+ i, titleFont );
+                        anchorTarget.setName( "Товар" );
+                        Paragraph par = new Paragraph();
+                        par.setSpacingAfter( 60 );
+                        par.add( anchorTarget1 );
+                        par.setAlignment( Element.ALIGN_CENTER );
+
+
+                        document.add(par);
+                        document.add( table );
+                        document.newPage();
+                        i++;
                     }
-                    //String str = set.getString( "productName" );
-                    document.add( new Paragraph( str, font1 ) );
                 } catch (DocumentException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
                     e.printStackTrace();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                Paragraph title1 = new Paragraph( "Chapter 1", FontFactory.getFont( FontFactory.HELVETICA, 18, Font.BOLDITALIC, new CMYKColor( 0, 255, 255, 17 ) ) );
-                Chapter chapter1 = new Chapter( title1, 1 );
-                chapter1.setNumberDepth( 0 );
-                Paragraph title11 = new Paragraph( "This is Section 1 in Chapter 1", FontFactory.getFont( FontFactory.HELVETICA, 16, Font.BOLD, new CMYKColor( 0, 255, 255, 17 ) ) );
-                Section section1 = chapter1.addSection( title11 );
-                Paragraph someSectionText = new Paragraph( "This text comes as part of section 1 of chapter 1." );
-                section1.add( someSectionText );
-                someSectionText = new Paragraph( "Following is a 3 X 2 table." );
-                section1.add( someSectionText );
-                try {
-                    document.add( chapter1 );
-                } catch (DocumentException e) {
-                    e.printStackTrace();
-                }
+
+//                    /*для винды c:/Windows/Fonts/arial.ttf*/
                 document.close();
             }
         } );
@@ -191,11 +284,17 @@ public class BaseReader extends JFrame {
 
     public class MyFrame extends JFrame {
         MyFrame() {
-            setBounds( 0, 0, 600, 500 );
-            JFileChooser dialog = new JFileChooser();
-            dialog.showOpenDialog( this );
-            File file = dialog.getSelectedFile();
-            setVisible( true );
+//            JFileChooser fileopen = new JFileChooser();
+//            fileopen.showSaveDialog( this);
+//            setBounds( 0, 0, 600, 500 );
+//            JFileChooser dialog = new JFileChooser();
+//            dialog.showOpenDialog( this );
+            JFileChooser chooser = new JFileChooser();
+            chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            chooser.showSaveDialog(null);
+             path = chooser.getSelectedFile().getAbsolutePath();
+           // PrintWriter file = new PrintWriter(new File(path+"EncryptedMessage.txt"));
+
         }
     }
 
@@ -208,11 +307,9 @@ public class BaseReader extends JFrame {
         PreparedStatement idStatement = connection.prepareStatement( id );
         statement.setInt( 1, 1 );
         resultSet = idStatement.executeQuery();
-        int i = 0;
         ArrayList<Integer> ids = new ArrayList();
         while (resultSet.next()) {
             ids.add( resultSet.getInt( "id" ) );
-            System.out.print( resultSet.getInt( "id" ) );
         }
         idArray = ids.toArray( new Integer[ids.size()] );
         resultSet = statement.executeQuery();
@@ -224,13 +321,11 @@ public class BaseReader extends JFrame {
             Class.forName( "com.mysql.jdbc.Driver" );
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.print( "3" );
         }
         try {
             connection = DriverManager.getConnection( url, user, password );
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.print( "4" );
         }
     }
 
@@ -278,7 +373,7 @@ public class BaseReader extends JFrame {
     private ResultSet getAllBase() throws SQLException {
         getConnection();
         ResultSet resultSet;
-        String selectAll = "SELECT * FROM  ProductBase.products WHERE id = 2";
+        String selectAll = "SELECT * FROM  ProductBase.products";
         PreparedStatement statment = connection.prepareStatement( selectAll );
         resultSet = statment.executeQuery();
         return resultSet;
