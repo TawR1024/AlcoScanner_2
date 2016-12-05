@@ -1,7 +1,6 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
-import org.jetbrains.annotations.Nullable;
 import service.HtmlParser;
 import service.InputCorrector;
 import service.IsInternetConnection;
@@ -120,7 +119,7 @@ public class Workbench extends JFrame {
     }
 
 
-    @Nullable
+    //@Nullable
     private String getCode() {
         InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
         String str = corrector.getCorrecredCode();

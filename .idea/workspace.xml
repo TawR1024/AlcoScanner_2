@@ -6,7 +6,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f92501d8-ec4d-4b0b-a7a4-78812b14c028" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/service/LogIn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/fonts/Arial.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fonts/Arial.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/service/LogIn.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" afterPath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$3.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$MyFrame.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$MyFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$3.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$4.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/AlcoScanner_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/AlcoScanner_2_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlcoScanner_2.iml" afterPath="$PROJECT_DIR$/AlcoScanner_2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
     </list>
     <ignored path="AlcoScanner_2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,35 +63,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseReader.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BaseReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="142" column="55" selection-start-line="142" selection-start-column="55" selection-end-line="142" selection-end-column="55" />
+            <state relative-caret-position="270">
+              <caret line="132" column="47" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3750#12137#0" expanded="true" />
-                <element signature="e#12136#12137#0" expanded="true" />
                 <element signature="method#init#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#layoutManager#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#executeNext#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#executePrevious#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#getAllBase#0;class#BaseReader#0" expanded="false" />
-                <marker date="1480942827465" expanded="true" signature="12016:12079" ph="{...}" />
-                <marker date="1480942827465" expanded="true" signature="12923:12970" ph="SELECT * FRO... products" />
-                <marker date="1480942827465" expanded="true" signature="12994:13029" ph="SELECT id FR... products" />
-                <marker date="1480942827465" expanded="true" signature="15294:15342" ph="SELECT * FRO... products" />
-                <marker date="1480942827465" expanded="true" signature="15664:15712" ph="SELECT * FRO... products" />
-                <marker date="1480942827465" expanded="true" signature="16060:16093" ph="SELECT * FRO... products" />
-                <marker date="1480942827465" expanded="true" signature="16060:16095" ph="SELECT * FRO... products" />
+                <marker date="1480959695112" expanded="true" signature="12382:12445" ph="{...}" />
+                <marker date="1480959695112" expanded="true" signature="13289:13336" ph="SELECT * FRO... products" />
+                <marker date="1480959695112" expanded="true" signature="13360:13395" ph="SELECT id FR... products" />
+                <marker date="1480959695112" expanded="true" signature="15660:15708" ph="SELECT * FRO... products" />
+                <marker date="1480959695112" expanded="true" signature="16030:16078" ph="SELECT * FRO... products" />
+                <marker date="1480959695112" expanded="true" signature="16426:16459" ph="SELECT * FRO... products" />
+                <marker date="1480959695112" expanded="true" signature="16426:16461" ph="SELECT * FRO... products" />
               </folding>
             </state>
           </provider>
@@ -146,14 +169,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/LogIn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.form" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/test/java/service/InputCorrectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
       </list>
     </option>
@@ -177,6 +200,8 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
+    <option name="alwaysShowArtifactId" value="true" />
+    <option name="showVersions" value="true" />
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
@@ -306,11 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,6 +356,122 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlcoScanner_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remastered" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlcoScanner_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remastered" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseReader" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlcoScanner_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remastered" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlcoScanner_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remastered" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -344,11 +481,11 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/HtmlParser.java&#10;conne&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/IsInternetConnection.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="239" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="457" />
@@ -999,7 +1136,7 @@
       <workItem from="1480684702606" duration="139000" />
       <workItem from="1480704442424" duration="15658000" />
       <workItem from="1480787109997" duration="4882000" />
-      <workItem from="1480810820786" duration="34187000" />
+      <workItem from="1480810820786" duration="41645000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен todo">
       <created>1476921923137</created>
@@ -1107,7 +1244,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256026000" />
+    <option name="totallyTimeSpent" value="263484000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1119,7 +1256,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1865" height="1056" extended-state="6" />
+    <frame x="55" y="24" width="1865" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1130,11 +1267,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810021" sideWeight="0.4442001" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2308961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3183716" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40501043" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26498076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20120946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18746564" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1240,7 +1377,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/PDF417DecoderTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/saveInBase.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/HtmlParserTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/SetEncoding.java">
@@ -1327,16 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1436,22 +1562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1460,14 +1570,6 @@
             <marker date="1480769429424" expanded="true" signature="696:766" ph="UPDATE Produ... " />
             <marker date="1480769429424" expanded="true" signature="866:916" ph="SELECT * FRO... products" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1485,17 +1587,6 @@
           <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.form">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
@@ -1622,27 +1713,77 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/arrow_large_left.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="142" column="55" selection-start-line="142" selection-start-column="55" selection-end-line="142" selection-end-column="55" />
+        <state relative-caret-position="396">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.form">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3750#12137#0" expanded="true" />
-            <element signature="e#12136#12137#0" expanded="true" />
+            <element signature="e#3442#3671#0" expanded="true" />
+            <element signature="e#3670#3671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="132" column="47" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#BaseReader#0" expanded="false" />
             <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
             <element signature="method#layoutManager#0;class#BaseReader#0" expanded="false" />
             <element signature="method#executeNext#0;class#BaseReader#0" expanded="false" />
             <element signature="method#executePrevious#0;class#BaseReader#0" expanded="false" />
             <element signature="method#getAllBase#0;class#BaseReader#0" expanded="false" />
-            <marker date="1480942827465" expanded="true" signature="12016:12079" ph="{...}" />
-            <marker date="1480942827465" expanded="true" signature="12923:12970" ph="SELECT * FRO... products" />
-            <marker date="1480942827465" expanded="true" signature="12994:13029" ph="SELECT id FR... products" />
-            <marker date="1480942827465" expanded="true" signature="15294:15342" ph="SELECT * FRO... products" />
-            <marker date="1480942827465" expanded="true" signature="15664:15712" ph="SELECT * FRO... products" />
-            <marker date="1480942827465" expanded="true" signature="16060:16093" ph="SELECT * FRO... products" />
-            <marker date="1480942827465" expanded="true" signature="16060:16095" ph="SELECT * FRO... products" />
+            <marker date="1480959695112" expanded="true" signature="12382:12445" ph="{...}" />
+            <marker date="1480959695112" expanded="true" signature="13289:13336" ph="SELECT * FRO... products" />
+            <marker date="1480959695112" expanded="true" signature="13360:13395" ph="SELECT id FR... products" />
+            <marker date="1480959695112" expanded="true" signature="15660:15708" ph="SELECT * FRO... products" />
+            <marker date="1480959695112" expanded="true" signature="16030:16078" ph="SELECT * FRO... products" />
+            <marker date="1480959695112" expanded="true" signature="16426:16459" ph="SELECT * FRO... products" />
+            <marker date="1480959695112" expanded="true" signature="16426:16461" ph="SELECT * FRO... products" />
           </folding>
         </state>
       </provider>
@@ -1720,7 +1861,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.apache.pdfbox:pdfbox:1.8.8</last-edited>
+          <last-edited>com.itextpdf:itextpdf:5.5.10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

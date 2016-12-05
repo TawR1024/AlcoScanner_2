@@ -1,16 +1,13 @@
 package Workbench;
 
 import com.itextpdf.text.*;
-import com.itextpdf.text.*;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.pdf.*;
 import com.itextpdf.text.Document;
 
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.io.*;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -125,15 +122,13 @@ public class BaseReader extends JFrame {
         SaveReportBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 MyFrame frame = new MyFrame();
-
                 BaseFont bf = null;
                 BaseFont anchorFnt = null;
                 try {
-                    bf = BaseFont.createFont( "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
+                    bf = BaseFont.createFont( "Arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
                     Font customFont;
                     //bf = BaseFont.createFont(new FileInputStream(getResourceAsStream("fonts/arial.ttf")), BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
-
-                    anchorFnt = BaseFont.createFont( "/usr/share/fonts/truetype/msttcorefonts/arialbd.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
+                   anchorFnt = BaseFont.createFont( "arialbd.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
                 } catch (DocumentException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
@@ -156,6 +151,16 @@ public class BaseReader extends JFrame {
                 paragraph1.setSpacingBefore( 60 );
                 paragraph1.add( anchorTarget );
                 paragraph1.setAlignment( Element.ALIGN_CENTER );
+                Date date = new Date();
+                SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy hh:mm");
+                Paragraph baseText =  new Paragraph( "Отчёт по товарам на "+ format1.format(date) + "\nОтчёт сформирован с помощью AlcoScanner 2",simplefont);
+                try {
+                    document.add( baseText );
+                } catch (DocumentException e) {
+                    e.printStackTrace();
+                }
+                document.newPage();
+
                 try {
                     document.add( paragraph1 );
                 } catch (DocumentException e) {
@@ -218,7 +223,7 @@ public class BaseReader extends JFrame {
                         PdfPCell cell32 = new PdfPCell( new Paragraph(set.getString( "impKpp" ), simplefont ) );
 
                         PdfPCell cell33 = new PdfPCell( new Paragraph("Адрес", simplefont ) );
-                        PdfPCell cell34 = new PdfPCell( new Paragraph(set.getString( "impAdr" )., simplefont ) );
+                        PdfPCell cell34 = new PdfPCell( new Paragraph(set.getString( "impAdr" ), simplefont ) );
 
 
                         table.addCell( cell1 );
