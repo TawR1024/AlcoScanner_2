@@ -56,7 +56,7 @@ public class InformationTable extends JFrame {
     private String[] scanedCode;
 
 
-        InformationTable(String[] code) {
+    InformationTable(String[] code) {
         super("Show Info");
         setContentPane(rootPanel);
         pack();
@@ -80,6 +80,8 @@ public class InformationTable extends JFrame {
                 }
             }
         });
+
+
         Save.addActionListener(new ActionListener() {
             //@Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -102,14 +104,6 @@ public class InformationTable extends JFrame {
 //                }
             }
         });
-//            try {
-//                Image img = ImageIO.read(getClass().getResource("/resources/arrow_large_left.png"));
-//                btnImg.setIcon(new ImageIcon(img));
-//            } catch (Exception ex) {
-//                System.out.println("ТРАБЛА " + ex);
-//            }
-
-           // btnImg.setRolloverIcon(new ImageIcon("/home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/main/resources/RArrow.gif"));
 
         }
 
@@ -265,13 +259,13 @@ public class InformationTable extends JFrame {
 //                System.out.println(nameTextField.getText());
                 stmnt.execute();
                 try {
-                    URL imgURL = InformationTable.class.getResource("/resources/Symbol_-_Check.png");
-                    ImageIcon icon = new ImageIcon(imgURL);
+                    //URL imgURL = InformationTable.class.getResource("/resources/Symbol_-_Check.png");
+                    //Image icon =new ImageIcon("resources/Symbol_-_Check.png").getImage(); //imgURL);
+                   // ImageIcon icon = createImageIcon("/resources/check.png");
                     JOptionPane.showMessageDialog(rootPanel,
                             "Товар:\n"+nameTextField.getText()+" сохранён в базу.",
-                            "Товар добавлен", JOptionPane.INFORMATION_MESSAGE,
-                            icon);
-                }catch (NullPointerException e){
+                            "Товар добавлен", JOptionPane.INFORMATION_MESSAGE);
+                }catch (NullPointerException e) {
                     System.out.print( "нет изображения" );
                 }
 //                JOptionPane.showConfirmDialog(
@@ -298,6 +292,19 @@ public class InformationTable extends JFrame {
     }
     public String getAlcoCode(){
         return  AlcoCodetextField.getText();
+    }
+
+
+
+
+    protected ImageIcon createImageIcon(String path) {
+        java.net.URL imgURL = getClass().getResource(path);
+        if (imgURL != null) {
+            return new ImageIcon(imgURL);
+        } else {
+            System.err.println("Couldn't find file: " + path);
+            return null;
+        }
     }
 }
 

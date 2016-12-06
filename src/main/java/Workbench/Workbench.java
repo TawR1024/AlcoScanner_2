@@ -6,6 +6,7 @@ import service.InputCorrector;
 import service.IsInternetConnection;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -33,6 +34,9 @@ public class Workbench extends JFrame {
         setVisible(true);
         setSize(500, 300);
         extractCodeButton.setVisible(true);
+
+//        Image mainIcon = new ImageIcon(Workbench.class.getResource("/resources/face.png")).getImage();
+//        this.setIconImage( mainIcon );
 
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
@@ -76,7 +80,6 @@ public class Workbench extends JFrame {
                                     "Warning",
                                     JOptionPane.YES_NO_OPTION);
                             if (userChoose == JOptionPane.OK_OPTION) {
-                                System.out.print("Первый код из поля "+PDF417codeField.getText());
                                 requesToExternalBase();
                             }
                         }
@@ -85,9 +88,13 @@ public class Workbench extends JFrame {
                     } catch (SQLClientInfoException e1) {
                         e1.printStackTrace();
                     }
+                    PDF417codeField.setText( "" );
                 }
+               // PDF417codeField.setText( "" );
             }
         });
+
+
         baseBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 BaseReader baseReader = new BaseReader();
