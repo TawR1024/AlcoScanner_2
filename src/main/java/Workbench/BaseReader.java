@@ -315,6 +315,58 @@ public class BaseReader extends JFrame {
                 }
             }
         } );
+        SaveReportBtn.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                SaveReportBtn.setForeground( new Color( 12, 17, 223  ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                SaveReportBtn.setForeground( Color.black );
+            }
+        } );
+        searchByCodeBtn.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                searchByCodeBtn.setForeground(new Color( 12, 17, 223  )  );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                searchByCodeBtn.setForeground( Color.black );
+            }
+        } );
+        redactor.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                redactor.setForeground( new Color( 12, 17, 223  ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                redactor.setForeground( Color.black );
+            }
+        } );
+        Save.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                Save.setForeground( new Color( 12, 17, 223  ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                Save.setForeground( Color.black );
+            }
+        } );
     }
 
 

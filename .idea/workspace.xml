@@ -6,14 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f92501d8-ec4d-4b0b-a7a4-78812b14c028" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" afterPath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$6.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$MyFrame.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$MyFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/SearchByCode.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/SearchByCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java" />
     </list>
     <ignored path="AlcoScanner_2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +44,10 @@
       <file leaf-file-name="BaseReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="286" column="13" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
+            <state relative-caret-position="490">
+              <caret line="364" column="60" selection-start-line="364" selection-start-column="60" selection-end-line="364" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12508#12730#0" expanded="true" />
                 <element signature="class#MyFrame#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#init#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
@@ -66,13 +58,13 @@
                 <element signature="method#setEditable#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#inputProtectionEnable#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#saveChanges#0;class#BaseReader#0" expanded="false" />
-                <marker date="1481160893450" expanded="true" signature="14618:14665" ph="SELECT * FRO... products" />
-                <marker date="1481160893450" expanded="true" signature="14689:14724" ph="SELECT id FR... products" />
-                <marker date="1481160893450" expanded="true" signature="17031:17079" ph="SELECT * FRO... products" />
-                <marker date="1481160893450" expanded="true" signature="17434:17482" ph="SELECT * FRO... products" />
-                <marker date="1481160893450" expanded="true" signature="17863:17898" ph="SELECT * FRO... products" />
-                <marker date="1481160893450" expanded="true" signature="19695:19917" ph="update Produ... " />
-                <marker date="1481160893450" expanded="true" signature="21615:21665" ph="SELECT * FRO... products" />
+                <marker date="1481161731273" expanded="true" signature="16594:16641" ph="SELECT * FRO... products" />
+                <marker date="1481161731273" expanded="true" signature="16665:16700" ph="SELECT id FR... products" />
+                <marker date="1481161731273" expanded="true" signature="19007:19055" ph="SELECT * FRO... products" />
+                <marker date="1481161731273" expanded="true" signature="19410:19458" ph="SELECT * FRO... products" />
+                <marker date="1481161731273" expanded="true" signature="19839:19874" ph="SELECT * FRO... products" />
+                <marker date="1481161731273" expanded="true" signature="21671:21893" ph="update Produ... " />
+                <marker date="1481161731273" expanded="true" signature="23591:23641" ph="SELECT * FRO... products" />
               </folding>
             </state>
           </provider>
@@ -82,29 +74,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PDF417Decoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchInBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="33" column="49" selection-start-line="30" selection-start-column="12" selection-end-line="33" selection-end-column="49" />
-              <folding>
-                <marker date="1480963718799" expanded="true" signature="696:766" ph="UPDATE Produ... " />
-                <marker date="1480963718799" expanded="true" signature="866:916" ph="SELECT * FRO... products" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -365,40 +334,6 @@
               <option name="myItemId" value="Workbench" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTable" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -428,32 +363,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="BaseReader" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlcoScanner_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remastered" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1148,7 +1057,7 @@
       <workItem from="1480787109997" duration="4882000" />
       <workItem from="1480810820786" duration="57815000" />
       <workItem from="1481066634340" duration="15375000" />
-      <workItem from="1481154846052" duration="6050000" />
+      <workItem from="1481154846052" duration="6887000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен todo">
       <created>1476921923137</created>
@@ -1256,7 +1165,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301079000" />
+    <option name="totallyTimeSpent" value="301916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1279,7 +1188,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810021" sideWeight="0.4442001" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2308961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24112734" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24112734" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1708,38 +1617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.form">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1714#3237#0" expanded="true" />
-            <element signature="e#3236#3237#0" expanded="true" />
-            <element signature="e#3277#3506#0" expanded="true" />
-            <element signature="e#3505#3506#0" expanded="true" />
-            <element signature="class#3590:4052" expanded="false" />
-            <element signature="method#mouseEntered#0;class#3590:4052" expanded="false" />
-            <element signature="method#mouseExited#0;class#3590:4052" expanded="false" />
-            <element signature="method#mouseExited#0;class#4102:4555" expanded="false" />
-            <element signature="method#mouseEntered#0;class#4599:5041" expanded="false" />
-            <element signature="method#mouseExited#0;class#4599:5041" expanded="false" />
-            <element signature="method#getCode#0;class#Workbench#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -1759,6 +1636,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.form">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="117" column="68" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3590:4052" expanded="false" />
+            <element signature="method#mouseEntered#0;class#3590:4052" expanded="false" />
+            <element signature="method#mouseExited#0;class#3590:4052" expanded="false" />
+            <element signature="method#mouseExited#0;class#4102:4555" expanded="false" />
+            <element signature="method#mouseEntered#0;class#4599:5041" expanded="false" />
+            <element signature="method#mouseExited#0;class#4599:5041" expanded="false" />
+            <element signature="method#getCode#0;class#Workbench#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1772,11 +1677,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="286" column="13" selection-start-line="286" selection-start-column="13" selection-end-line="286" selection-end-column="13" />
+        <state relative-caret-position="490">
+          <caret line="364" column="60" selection-start-line="364" selection-start-column="60" selection-end-line="364" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12508#12730#0" expanded="true" />
             <element signature="class#MyFrame#0;class#BaseReader#0" expanded="false" />
             <element signature="method#init#0;class#BaseReader#0" expanded="false" />
             <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
@@ -1787,13 +1691,13 @@
             <element signature="method#setEditable#0;class#BaseReader#0" expanded="false" />
             <element signature="method#inputProtectionEnable#0;class#BaseReader#0" expanded="false" />
             <element signature="method#saveChanges#0;class#BaseReader#0" expanded="false" />
-            <marker date="1481160893450" expanded="true" signature="14618:14665" ph="SELECT * FRO... products" />
-            <marker date="1481160893450" expanded="true" signature="14689:14724" ph="SELECT id FR... products" />
-            <marker date="1481160893450" expanded="true" signature="17031:17079" ph="SELECT * FRO... products" />
-            <marker date="1481160893450" expanded="true" signature="17434:17482" ph="SELECT * FRO... products" />
-            <marker date="1481160893450" expanded="true" signature="17863:17898" ph="SELECT * FRO... products" />
-            <marker date="1481160893450" expanded="true" signature="19695:19917" ph="update Produ... " />
-            <marker date="1481160893450" expanded="true" signature="21615:21665" ph="SELECT * FRO... products" />
+            <marker date="1481161731273" expanded="true" signature="16594:16641" ph="SELECT * FRO... products" />
+            <marker date="1481161731273" expanded="true" signature="16665:16700" ph="SELECT id FR... products" />
+            <marker date="1481161731273" expanded="true" signature="19007:19055" ph="SELECT * FRO... products" />
+            <marker date="1481161731273" expanded="true" signature="19410:19458" ph="SELECT * FRO... products" />
+            <marker date="1481161731273" expanded="true" signature="19839:19874" ph="SELECT * FRO... products" />
+            <marker date="1481161731273" expanded="true" signature="21671:21893" ph="update Produ... " />
+            <marker date="1481161731273" expanded="true" signature="23591:23641" ph="SELECT * FRO... products" />
           </folding>
         </state>
       </provider>
