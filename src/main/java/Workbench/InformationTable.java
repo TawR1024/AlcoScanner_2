@@ -1,9 +1,9 @@
 package Workbench;
-
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.net.URL;
+import java.io.InputStream;
 import java.sql.*;
 
 /**
@@ -65,10 +65,9 @@ public class InformationTable extends JFrame {
         setScanedCode(code);
         setInformation();
         Save.setVisible(true);
-       // btnImg.setIcon(new ImageIcon(getClass().getResource("/home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/main/resources/arrow_large_left.png")));
+
 
         redactor.addActionListener(new ActionListener() {
-           // @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int userChoose = JOptionPane.showConfirmDialog(
                         rootPanel,
@@ -81,9 +80,7 @@ public class InformationTable extends JFrame {
             }
         });
 
-
         Save.addActionListener(new ActionListener() {
-            //@Override
             public void actionPerformed(ActionEvent actionEvent) {
                 DataBaseWorker adder = new DataBaseWorker();
                 try {
@@ -93,15 +90,6 @@ public class InformationTable extends JFrame {
                 }catch (SQLClientInfoException ex){
                     ex.printStackTrace();
                 }
-//                Updater updater = new Updater();
-//                try {
-//                    updater.DataBaseWorker();
-//                    updater.
-//                } catch (ClassNotFoundException e) {
-//                    e.printStackTrace();
-//                } catch (SQLClientInfoException e) {
-//                    e.printStackTrace();
-//                }
             }
         });
 
@@ -112,7 +100,7 @@ public class InformationTable extends JFrame {
         scanedCode = code;
     }
 
-    //@// TODO: 20.10.16 Возможно стоит изменить на массив, для реализации красивого цикла заполнения
+    // TODO: 20.10.16 Возможно стоит изменить на массив, для реализации красивого цикла заполнения
     private void setEditable() {
         nameTextField.setEditable(true);
 
@@ -230,9 +218,6 @@ public class InformationTable extends JFrame {
 
             Connection con;
             Class.forName("com.mysql.jdbc.Driver");
-
-            Statement stmt;
-            ResultSet rs;
             String qr = "INSERT INTO ProductBase.products(productName,alcoCode,codeClass,strength,volume,manufacture,fsrar,fullname,inn,kpp,adr,importer,impFsrar,impFullName,impInn,impKpp,impAdr)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             try {
@@ -256,24 +241,16 @@ public class InformationTable extends JFrame {
                 stmnt.setString(15, importerInn.getText());
                 stmnt.setString(16, importerKpp.getText());
                 stmnt.setString(17, importAdresTextField.getText());
-//                System.out.println(nameTextField.getText());
                 stmnt.execute();
                 try {
-                    //URL imgURL = InformationTable.class.getResource("/resources/Symbol_-_Check.png");
-                    //Image icon =new ImageIcon("resources/Symbol_-_Check.png").getImage(); //imgURL);
-                   // ImageIcon icon = createImageIcon("/resources/check.png");
+
+                    // TODO: 07.12.16 Добавить иконку для JOpane
                     JOptionPane.showMessageDialog(rootPanel,
                             "Товар:\n"+nameTextField.getText()+" сохранён в базу.",
                             "Товар добавлен", JOptionPane.INFORMATION_MESSAGE);
                 }catch (NullPointerException e) {
-                    System.out.print( "нет изображения" );
+                    System.out.print( "\nнет изображения" );
                 }
-//                JOptionPane.showConfirmDialog(
-//                        rootPanel,
-//                        "Товар успешно внесён в базу",
-//                        "Information",
-//                        JOptionPane.YES_OPTION,icon);
-
 //                    //15N00001CJJRHTDA8MH1NS9111090190097471551531120421912173024240294724
 //                    }//20N00001CGUMZYCB99J1NKN31105001000056NQQMS5VP4HTF5SB46ZSQQJD8BNJP891
                 con.close();
@@ -290,21 +267,9 @@ public class InformationTable extends JFrame {
     public  String  getProductName(){
         return  nameTextField.getText();
     }
+
     public String getAlcoCode(){
         return  AlcoCodetextField.getText();
-    }
-
-
-
-
-    protected ImageIcon createImageIcon(String path) {
-        java.net.URL imgURL = getClass().getResource(path);
-        if (imgURL != null) {
-            return new ImageIcon(imgURL);
-        } else {
-            System.err.println("Couldn't find file: " + path);
-            return null;
-        }
     }
 }
 

@@ -1,7 +1,7 @@
 import Workbench.LookAndFeel;
 import Workbench.Workbench;
-import service.IsInternetConnection;
 import service.LBaseConnector;
+import service.IsInternetConnection;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
@@ -16,8 +16,8 @@ public class Main {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-//        LookAndFeel progStyle = new LookAndFeel();
-//        progStyle.setLookAndFeel();
+        LookAndFeel progStyle = new LookAndFeel();
+        progStyle.setLookAndFeel();
 
         IsInternetConnection connection = new IsInternetConnection();
         Thread nThread = new Thread( connection );

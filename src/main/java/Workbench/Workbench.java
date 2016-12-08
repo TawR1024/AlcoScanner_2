@@ -1,16 +1,11 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
-import service.HtmlParser;
-import service.InputCorrector;
 import service.IsInternetConnection;
-
+import service.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 import java.sql.SQLClientInfoException;
 
 /**
@@ -26,7 +21,7 @@ public class Workbench extends JFrame {
     private JButton baseBtn;
 
     public Workbench() {
-        super("Alco Scaner");
+        super("Сканер марки");
         setContentPane(rootPane);
         alcoLable.setVisible(false);
         pack();
@@ -34,9 +29,8 @@ public class Workbench extends JFrame {
         setVisible(true);
         setSize(500, 300);
         extractCodeButton.setVisible(true);
-
-//        Image mainIcon = new ImageIcon(Workbench.class.getResource("/resources/face.png")).getImage();
-//        this.setIconImage( mainIcon );
+        setResizable( false );
+        baseBtn.setToolTipText( "Открыть локальную базу с товарами");
 
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
@@ -89,6 +83,7 @@ public class Workbench extends JFrame {
                         e1.printStackTrace();
                     }
                     PDF417codeField.setText( "" );
+                    alcoCodeLable.setText( "" );
                 }
                // PDF417codeField.setText( "" );
             }
@@ -99,6 +94,53 @@ public class Workbench extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 BaseReader baseReader = new BaseReader();
                 baseReader.setLocationRelativeTo( null );
+            }
+        } );
+
+
+
+       /* подсветка текста*/
+        extractCodeButton.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                extractCodeButton.setForeground( new Color( 12, 17, 223 ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                extractCodeButton.setForeground( Color.black );
+            }
+        } );
+
+
+        RequestButton.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                RequestButton.setForeground( new Color( 12, 17, 223 ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+               RequestButton.setForeground( Color.black );
+            }
+        } );
+
+
+        baseBtn.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                baseBtn.setForeground( new Color( 12, 17, 223 ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                baseBtn.setForeground( Color.black );
             }
         } );
     }
@@ -126,7 +168,6 @@ public class Workbench extends JFrame {
     }
 
 
-    //@Nullable
     private String getCode() {
         InputCorrector corrector = new InputCorrector(PDF417codeField.getText());
         String str = corrector.getCorrecredCode();
@@ -147,5 +188,8 @@ public class Workbench extends JFrame {
         nThread.start();
         sendRequest();
     }
+
+
+
 
 }

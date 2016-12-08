@@ -7,8 +7,6 @@ import javax.swing.*;
  *
  * @author ilya-kulakov
  * @version 2.1
- * @// TODO: 19.10.16 Создаёться более 2х объектов паттерна Singleton
- *
  * Класс осуществляет проверку доступности резурса ЕГАИС или состония подключения к интернету.
  */
 public  class IsInternetConnection implements Runnable {
@@ -44,6 +42,7 @@ public  class IsInternetConnection implements Runnable {
      * @param domain если параметр пустой, то устанавливается адрес корневого DNS
      *               иначе устанавливается адрес переданный как параметр
      * */
+
     private void setDomain(String[] domain){
 
         if(domain.length == 0){
@@ -54,6 +53,8 @@ public  class IsInternetConnection implements Runnable {
             errorMessg = egaisError;
         }
     }
+
+
     /**Конструктор
      * @param hostUrl Strig содержит адрес проверяемого ресурса. Может быть пустым*/
     public IsInternetConnection(String ... hostUrl){

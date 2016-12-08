@@ -46,7 +46,8 @@ public class InputCorrector {
     /**
      * Заменяет все кирилические символы их клавиатурными эквивалентами
      */
-    private void correctInput(){//TODO:изменить реализацию
+    private void correctInput(){
+        //TODO:изменить реализацию
         char[] ru = rusAlpha.toCharArray();
         char[] en = engAlpha.toCharArray();
         char[] code = inputCode.toCharArray();

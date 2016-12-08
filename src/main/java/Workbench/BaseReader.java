@@ -5,12 +5,12 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.pdf.*;
 import com.itextpdf.text.Document;
 
+import java.awt.*;
+import java.awt.event.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.io.*;
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -278,6 +278,12 @@ public class BaseReader extends JFrame {
                     e.printStackTrace();
                 }
                 document.close();
+            }
+        } );
+
+        searchByCodeBtn.addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                SearchByCode searchByCode = new SearchByCode();
             }
         } );
     }

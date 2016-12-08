@@ -25,11 +25,12 @@
             <properties>
               <icon value="search.png"/>
               <text value="&amp;Запросить информацию о продукте"/>
+              <toolTipText value="Поиск информации о продукте"/>
             </properties>
           </component>
           <component id="adf9b" class="javax.swing.JLabel">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="Код с марки:"/>
@@ -37,7 +38,7 @@
           </component>
           <component id="5ca51" class="javax.swing.JLabel" binding="alcoLable">
             <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="0" indent="1" use-parent-layout="false">
                 <preferred-size width="130" height="25"/>
               </grid>
             </constraints>
@@ -119,12 +120,12 @@
           </component>
           <component id="12be8" class="javax.swing.JButton" binding="extractCodeButton">
             <constraints>
-              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false">
-                <preferred-size width="130" height="30"/>
-              </grid>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Получить алко код  "/>
+              <icon value="barcode-icon.png"/>
+              <text value="Получить алко код    "/>
+              <toolTipText value="Получить код продукта"/>
             </properties>
           </component>
         </children>
