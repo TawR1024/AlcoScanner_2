@@ -378,7 +378,7 @@
                     <properties>
                       <icon value="pencil.png"/>
                       <text value="Редактировать"/>
-                      <toolTipText value="Редактировать информацию"/>
+                      <toolTipText value="Начать редактирование"/>
                     </properties>
                   </component>
                   <component id="d0f1a" class="javax.swing.JButton" binding="nextBtn">

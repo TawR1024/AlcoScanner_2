@@ -39,9 +39,6 @@ public class Workbench extends JFrame {
             }
         });
 
-
-        //TODO: 26.10.16  Проверить наличие корректора ввода. Tip: Добовамить обработчика на изменение текста вызывающего корректор
-
         RequestButton.addActionListener(new ActionListener() {
            // @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -85,7 +82,6 @@ public class Workbench extends JFrame {
                     PDF417codeField.setText( "" );
                     alcoCodeLable.setText( "" );
                 }
-               // PDF417codeField.setText( "" );
             }
         });
 

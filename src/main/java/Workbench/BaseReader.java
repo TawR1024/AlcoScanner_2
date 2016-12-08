@@ -286,6 +286,21 @@ public class BaseReader extends JFrame {
                 SearchByCode searchByCode = new SearchByCode();
             }
         } );
+
+
+        redactor.addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+
+                int userChoose = JOptionPane.showConfirmDialog(
+                        rootPanel,
+                        "Действительно хотите выполнить это действие?",
+                        "Warning",
+                        JOptionPane.YES_NO_OPTION);
+                if (userChoose == JOptionPane.OK_OPTION) {
+                    setEditable();
+                }
+            }
+        } );
     }
 
 
@@ -322,7 +337,8 @@ public class BaseReader extends JFrame {
         statement.setInt( 1, idArray[0] );
         resultSet = statement.executeQuery();
         layoutManager( resultSet );
-    }
+        inputProtectionEnable();
+    }git
 
     private void getConnection() {
         try {
@@ -366,6 +382,7 @@ public class BaseReader extends JFrame {
         PreparedStatement statement = connection.prepareStatement( qr2 );
         statement.setInt( 1, idArray[currentId++] );
         resultSet = statement.executeQuery();
+        inputProtectionEnable();
         return resultSet;
     }
 
@@ -375,6 +392,7 @@ public class BaseReader extends JFrame {
         PreparedStatement statement = connection.prepareStatement( qr2 );
         statement.setInt( 1, idArray[currentId--] );
         resultSet = statement.executeQuery();
+        inputProtectionEnable();
         return resultSet;
     }
 
@@ -385,6 +403,79 @@ public class BaseReader extends JFrame {
         PreparedStatement statment = connection.prepareStatement( selectAll );
         resultSet = statment.executeQuery();
         return resultSet;
+    }
+
+    private void setEditable(){
+        nameTextField.setEditable(true);
+
+        AlcoCodetextField.setEditable(true);
+
+        CodeClasstextField.setEditable(true);
+
+        StrengthtextField.setEditable(true);
+
+        volumeTextField.setEditable(true);
+
+        manufacturTextField.setEditable(true);
+
+        fsrarTextField.setEditable(true);
+
+        fullNameTextField.setEditable(true);
+
+        innTextField.setEditable(true);
+
+        kppTextField.setEditable(true);
+
+        adresTextField.setEditable(true);
+
+        importerTextField.setEditable(true);
+
+        importFsrarTextField.setEditable(true);
+
+        importFullNameTextField.setEditable(true);
+
+        importerInn.setEditable(true);
+
+        importerKpp.setEditable(true);
+
+        importAdresTextField.setEditable(true);
+    }
+
+    private void inputProtectionEnable(){
+        nameTextField.setEditable(false);
+
+        AlcoCodetextField.setEditable(false);
+
+        CodeClasstextField.setEditable(false);
+
+        StrengthtextField.setEditable(false);
+
+        volumeTextField.setEditable(false);
+
+        manufacturTextField.setEditable(false);
+
+        fsrarTextField.setEditable(false);
+
+        fullNameTextField.setEditable(false);
+
+        innTextField.setEditable(false);
+
+        kppTextField.setEditable(false);
+
+        adresTextField.setEditable(false);
+
+        importerTextField.setEditable(false);
+
+        importFsrarTextField.setEditable(false);
+
+        importFullNameTextField.setEditable(false);
+
+        importerInn.setEditable(false);
+
+        importerKpp.setEditable(false);
+
+        importAdresTextField.setEditable(false);
+
     }
 
 }
