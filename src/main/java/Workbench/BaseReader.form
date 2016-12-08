@@ -210,6 +210,7 @@
                     </constraints>
                     <properties>
                       <font swing-font="TextPane.font"/>
+                      <toolTipText value="Поле нельзя редактировать"/>
                     </properties>
                   </component>
                   <component id="dfb38" class="javax.swing.JTextField" binding="CodeClasstextField">

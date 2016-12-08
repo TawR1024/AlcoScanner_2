@@ -86,8 +86,8 @@ public class BaseReader extends JFrame {
             init();
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.print( "1" );
         }
+        Save.setVisible( false );
 
 
         nextBtn.addActionListener( new ActionListener() {
@@ -98,7 +98,6 @@ public class BaseReader extends JFrame {
                     connection.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
-                    System.out.print( "2" );
                 }
             }
 
@@ -298,6 +297,19 @@ public class BaseReader extends JFrame {
                         JOptionPane.YES_NO_OPTION);
                 if (userChoose == JOptionPane.OK_OPTION) {
                     setEditable();
+                    Save.setVisible( true );
+                }
+            }
+        } );
+        Save.addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                int userChoose = JOptionPane.showConfirmDialog(
+                        rootPanel,
+                        "Действительно хотите выполнить это действие?",
+                        "Warning",
+                        JOptionPane.YES_NO_OPTION);
+                if (userChoose == JOptionPane.OK_OPTION) {
+                    saveChanges();
                 }
             }
         } );
@@ -338,7 +350,7 @@ public class BaseReader extends JFrame {
         resultSet = statement.executeQuery();
         layoutManager( resultSet );
         inputProtectionEnable();
-    }git
+    }
 
     private void getConnection() {
         try {
@@ -408,8 +420,6 @@ public class BaseReader extends JFrame {
     private void setEditable(){
         nameTextField.setEditable(true);
 
-        AlcoCodetextField.setEditable(true);
-
         CodeClasstextField.setEditable(true);
 
         StrengthtextField.setEditable(true);
@@ -476,6 +486,37 @@ public class BaseReader extends JFrame {
 
         importAdresTextField.setEditable(false);
 
+    }
+
+    private void saveChanges(){
+        String qr = "update ProductBase.products set productName = ?,codeClass= ?,strength= ?,volume= ?,manufacture= ?,fsrar= ?,fullname= ?,inn= ?,kpp= ?,adr= ?,importer= ?,impFsrar= ?,impFullName= ?,impInn= ?,impKpp= ?,impAdr= ? WHERE  id = ?";
+        try {
+            PreparedStatement stmnt = connection.prepareStatement( qr );
+            stmnt.setString( 1, nameTextField.getText() );
+            stmnt.setString( 2, CodeClasstextField.getText() );
+            stmnt.setString( 3, StrengthtextField.getText() );
+            stmnt.setString( 4, volumeTextField.getText() );
+            stmnt.setString( 5, manufacturTextField.getText() );
+            stmnt.setString( 6, fsrarTextField.getText() );
+            stmnt.setString( 7, fullNameTextField.getText() );
+            stmnt.setString( 8, innTextField.getText() );
+            stmnt.setString( 9, kppTextField.getText() );
+            stmnt.setString( 10, adresTextField.getText() );
+            stmnt.setString( 11, importerTextField.getText() );
+            stmnt.setString( 12, importFsrarTextField.getText() );
+            stmnt.setString( 13, importFullNameTextField.getText() );
+            stmnt.setString( 14, importerInn.getText() );
+            stmnt.setString( 15, importerKpp.getText() );
+            stmnt.setString( 16, importAdresTextField.getText() );
+            stmnt.setInt( 17, idArray[currentId] );
+            stmnt.execute();
+            JOptionPane.showMessageDialog(rootPanel, "Информация обновлена", "Сохранено",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(rootPanel, "Неудалось обновить информацию", "Ошибка",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 
 }
