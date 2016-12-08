@@ -282,7 +282,8 @@ public class BaseReader extends JFrame {
 
         searchByCodeBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-                SearchByCode searchByCode = new SearchByCode();
+                String ans=JOptionPane.showInputDialog("Введите код: ");
+                serchByCode( ans );
             }
         } );
 
@@ -301,6 +302,7 @@ public class BaseReader extends JFrame {
                 }
             }
         } );
+
         Save.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 int userChoose = JOptionPane.showConfirmDialog(
@@ -517,6 +519,21 @@ public class BaseReader extends JFrame {
             JOptionPane.showMessageDialog(rootPanel, "Неудалось обновить информацию", "Ошибка",
                     JOptionPane.INFORMATION_MESSAGE);
         }
+    }
+
+    private void serchByCode(String code){
+        ResultSet resultSet;
+        PDF417Decoder decoder = new PDF417Decoder(code );
+        String qr1 = "SELECT * FROM ProductBase.products WHERE alcoCode=" + decoder.extractCode();
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement(qr1);
+            resultSet = statement.executeQuery();
+            layoutManager( resultSet );
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
