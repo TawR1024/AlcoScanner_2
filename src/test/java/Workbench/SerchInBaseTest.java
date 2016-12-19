@@ -1,6 +1,4 @@
 package Workbench;
-
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -12,24 +10,23 @@ import static org.junit.Assert.*;
 public class SerchInBaseTest {
 
 
-    static  SearchInBase serchInBase;
-    static  String alCode = "0177481000001526569";
+    private static  SearchInBase serchInBase;
+    private static final String alCode = "0177481000001526569";
 
     @BeforeClass
     public static void Setup(){
         serchInBase = new SearchInBase();
-        serchInBase.code = alCode;
+        SearchInBase.code = alCode;
     }
 
     @Test
     public void searchInBase() throws Exception {
-        serchInBase.code  = alCode;
+        SearchInBase.code = alCode;
     }
 
     @Test
     public void isExist() throws Exception {
-        boolean res = serchInBase.isExist();
+        boolean res = SearchInBase.isExist();
         assertTrue("запись не найдена",res);
     }
-
 }

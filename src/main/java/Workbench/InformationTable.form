@@ -368,6 +368,7 @@
                 <properties>
                   <icon value="pencil.png"/>
                   <text value="&amp;Редактировать"/>
+                  <toolTipText value="Редактировать информацию о товаре"/>
                 </properties>
               </component>
               <hspacer id="61e21">
@@ -384,6 +385,7 @@
                 <properties>
                   <icon value="pluss.png"/>
                   <text value="Добавить"/>
+                  <toolTipText value="Добавить товар в локальную базу"/>
                 </properties>
               </component>
             </children>

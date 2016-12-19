@@ -14,8 +14,7 @@ import static org.junit.Assert.*;
 public class InputCorrectorTest {
 
 
-     String expected = "qwertyuiop[]asdfghjkl;'zxcvbnm";
-    static InputCorrector inputCorrector;
+    private static InputCorrector inputCorrector;
     @BeforeClass
     public static void Setup(){
         String input = "йцукенгшщзхъфывапролджэячсмить";
@@ -25,7 +24,8 @@ public class InputCorrectorTest {
     }
     @Test
     public void getCorrecredCode() throws Exception {
-        assertEquals("Кирилица исправлена неверно",expected,inputCorrector.getCorrecredCode());
+        String expected = "qwertyuiop[]asdfghjkl;'zxcvbnm";
+        assertEquals("Кирилица исправлена неверно", expected,inputCorrector.getCorrecredCode());
     }
 
 }

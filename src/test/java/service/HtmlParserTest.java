@@ -1,16 +1,16 @@
 package service;
 
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by ilya-kulakov on 28.11.16.
  */
 public class HtmlParserTest {
-    String[] expected = {"Водка \"ВАЛЕНКИ СИЛЬВЕР\"",
+    private final String[] expected = {"Водка \"ВАЛЕНКИ СИЛЬВЕР\"",
             "0003719000001263202",
             "200",
             "40",
@@ -27,7 +27,7 @@ public class HtmlParserTest {
             "",
             "",
             ""};
-    static HtmlParser htmlParser;
+    private static HtmlParser htmlParser;
 
 
     @BeforeClass

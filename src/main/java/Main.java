@@ -1,21 +1,18 @@
 import Workbench.LookAndFeel;
 import Workbench.Workbench;
-import service.LBaseConnector;
 import service.IsInternetConnection;
+
+import java.util.logging.Logger;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
  *
  * @version 2.1.0
  */
-public class Main {
+class Main {
 
     public static void main(String[] args) {
-        try {
-            LBaseConnector.LBaseConnector();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+
         LookAndFeel progStyle = new LookAndFeel();
         progStyle.setLookAndFeel();
 
@@ -26,5 +23,4 @@ public class Main {
         Workbench workplace = new Workbench();
         workplace.setLocationRelativeTo( null );
     }
-
 }

@@ -1,8 +1,11 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
+import org.apache.log4j.Logger;
+import service.HtmlParser;
+import service.InputCorrector;
 import service.IsInternetConnection;
-import service.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -20,6 +23,10 @@ public class Workbench extends JFrame {
     private JTextField PDF417codeField;
     private JButton baseBtn;
 
+
+    private final Logger logger = Logger.getLogger(Workbench.class);
+
+
     public Workbench() {
         super("Сканер марки");
         setContentPane(rootPane);
@@ -32,6 +39,8 @@ public class Workbench extends JFrame {
         setResizable( false );
         baseBtn.setToolTipText( "Открыть локальную базу с товарами");
 
+
+
         /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
@@ -42,10 +51,6 @@ public class Workbench extends JFrame {
         RequestButton.addActionListener(new ActionListener() {
            // @Override
             public void actionPerformed(ActionEvent actionEvent) {
-//                    IsInternetConnection connection = new IsInternetConnection("xn--80affoam1c.xn--p1ai");
-//                    Thread nThread = new Thread(connection);
-//                    nThread.start();
-//                    sendRequest();
                 requesToExternalBase();
             }
 
@@ -56,28 +61,25 @@ public class Workbench extends JFrame {
             public void keyReleased(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     String code = getCode();
-                    try {
-                        SearchInBase.SearchInBase(code);
-                        if (SearchInBase.isExist()) {
-                            JOptionPane.showMessageDialog(
-                                    new JPanel(),
-                                    "Количество товара увеличено.",
-                                    "Information",
-                                    JOptionPane.YES_OPTION);
-                        } else {
-                            int userChoose = JOptionPane.showConfirmDialog(
-                                    new JPanel(),
-                                    "Товар не найден.\nХотите запросить информацию из базы ЕГАИС?",
-                                    "Warning",
-                                    JOptionPane.YES_NO_OPTION);
-                            if (userChoose == JOptionPane.OK_OPTION) {
-                                requesToExternalBase();
-                            }
+                    SearchInBase.SearchInBase(code);
+                    if (SearchInBase.isExist()) {
+                        JOptionPane.showMessageDialog(
+                                new JPanel(),
+                                "Количество товара увеличено.",
+                                "Information",
+                                JOptionPane.YES_OPTION);
+                        logger.info( "Товар добавлен в базу" );
+                    } else {
+                        int userChoose = JOptionPane.showConfirmDialog(
+                                new JPanel(),
+                                "Товар не найден.\nХотите запросить информацию из базы ЕГАИС?",
+                                "Warning",
+                                JOptionPane.YES_NO_OPTION);
+                        logger.warn( "Warning: В локальной базе товар НЕБЫЛ найден" );
+
+                        if (userChoose == JOptionPane.OK_OPTION) {
+                            requesToExternalBase();
                         }
-                    } catch (ClassNotFoundException e1) {
-                        e1.printStackTrace();
-                    } catch (SQLClientInfoException e1) {
-                        e1.printStackTrace();
                     }
                     PDF417codeField.setText( "" );
                     alcoCodeLable.setText( "" );
@@ -146,13 +148,13 @@ public class Workbench extends JFrame {
         String requestInfo = "";
         try {
             SendRequest request = new SendRequest(PDF417codeField.getText());
-            System.out.println("Код из поля" + PDF417codeField.getText());
             requestInfo = request.getInfo();
         } catch (Exception e1) {
             e1.printStackTrace();
             JOptionPane.showMessageDialog(rootPane, "Request Error",
                     "При получении информации возникла ошибка",
                     JOptionPane.ERROR_MESSAGE);
+            logger.error( "Внешний сервер передал пустой ответ" );
             return;
         }
 
@@ -184,8 +186,4 @@ public class Workbench extends JFrame {
         nThread.start();
         sendRequest();
     }
-
-
-
-
 }

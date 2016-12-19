@@ -7,16 +7,13 @@ import java.io.UnsupportedEncodingException;
  * @deprecated since 2.0.1
  */
 @Deprecated
-public class SetEncoding {// TODO: 20.10.16 выполнять проверку в другом потоке. implements Runnable
+class SetEncoding {// TODO: 20.10.16 выполнять проверку в другом потоке. implements Runnable
     @Deprecated
-    static boolean encodingAnable = false;
+    private static boolean encodingAnable = false;
     @Deprecated
     public  static void setSystem() {
-        if (true) {//System.getProperty("os.name").startsWith("Windows")
-            encodingAnable = true;
-        } else {
-            encodingAnable = false;
-        }
+        //System.getProperty("os.name").startsWith("Windows")
+        encodingAnable = true;
     }
     @Deprecated
     public static boolean getEncodigStatus() {

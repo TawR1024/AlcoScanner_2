@@ -1,18 +1,13 @@
 package Workbench;
 
 import javax.swing.*;
-
 import java.awt.*;
-import java.awt.event.*;
 /**
  * Created by Ilya Kulakov on 08.12.16.
  */
 
 @Deprecated
-public class SearchByCode extends JFrame {
-
-    private JLabel codeLable = new JLabel( "Введите код: " );
-    private JTextField codeField = new JTextField(  );
+class SearchByCode extends JFrame {
 
     public SearchByCode(){
         super("Поиск по коду");
@@ -20,7 +15,9 @@ public class SearchByCode extends JFrame {
         this.setLocationRelativeTo( null );
         Container container = this.getContentPane();
         container.setLayout( new GridLayout( 1,2 ) );
+        JLabel codeLable = new JLabel( "Введите код: " );
         container.add( codeLable );
+        JTextField codeField = new JTextField();
         container.add( codeField );
         codeField.setSize(400,10);
         setVisible( true );

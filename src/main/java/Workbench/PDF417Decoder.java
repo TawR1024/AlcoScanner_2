@@ -1,6 +1,5 @@
 package Workbench;
 
-
 /**
  * Created by ilya-kulakov on 19.10.16.
  *
@@ -8,20 +7,12 @@ package Workbench;
  * @author Ilya Kulakov Eltech/group/4308 10/19/16
  * @version 2.0
  */
-public class PDF417Decoder {
+class PDF417Decoder {
 
     /**
      * Строка содержащая код в формате BASE36
      */
-    public String inputCode;
-    /**
-     * Строка содержащая все цифры 36-ричной системы счисления
-     */
-    String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    /**
-     * Основание системы
-     */
-    final int systemBase = 36;
+    private final String inputCode;
 
     /**
      * Констуктор класса PDF417Decoder
@@ -48,8 +39,16 @@ public class PDF417Decoder {
             char arrChar[] = finalCode.toCharArray();
 
             for (int i = 0; i < arrChar.length; ++i) {
+                /*
+      Строка содержащая все цифры 36-ричной системы счисления
+     */
+                String base_sys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
                 found = base_sys.indexOf(arrChar[i]);
-                long sum = (long) (found * Math.pow(systemBase, power));
+                /*
+      Основание системы
+     */
+                int systemBase = 36;
+                long sum = (long) (found * Math.pow( systemBase, power));
                 digit += (sum);
                 --power;
             }

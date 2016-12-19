@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f92501d8-ec4d-4b0b-a7a4-78812b14c028" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/Ilya_Kulakov.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/pdfbox-1.8.8-javadoc.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$MyFrame.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" afterPath="$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar/AlcoScanner_2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$10.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$3.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$4.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$5.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$6.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$7.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$8.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$9.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/BaseReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$DataBaseWorker.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable$DataBaseWorker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/InformationTable.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/InformationTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/PDF417Decoder.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/PDF417Decoder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/SearchByCode.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/SearchByCode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/SearchInBase.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/SearchInBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$1.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$2.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$3.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$4.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$5.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$6.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench$7.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Workbench/Workbench.class" afterPath="$PROJECT_DIR$/target/classes/Workbench/Workbench.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/HtmlParser.class" afterPath="$PROJECT_DIR$/target/classes/service/HtmlParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/InputCorrector.class" afterPath="$PROJECT_DIR$/target/classes/service/InputCorrector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/IsInternetConnection.class" afterPath="$PROJECT_DIR$/target/classes/service/IsInternetConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/LBaseConnector.class" afterPath="$PROJECT_DIR$/target/classes/service/LBaseConnector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/Resource.class" afterPath="$PROJECT_DIR$/target/classes/service/Resource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/service/SetEncoding.class" afterPath="$PROJECT_DIR$/target/classes/service/SetEncoding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Workbench/SerchInBaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/Workbench/SerchInBaseTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/service/HtmlParserTest.class" afterPath="$PROJECT_DIR$/target/test-classes/service/HtmlParserTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/service/InputCorrectorTest.class" afterPath="$PROJECT_DIR$/target/test-classes/service/InputCorrectorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_itextpdf_itextpdf_5_5_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_itextpdf_itextpdf_5_5_10.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlcoScanner_2.iml" afterPath="$PROJECT_DIR$/AlcoScanner_2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDOc/stylesheet.css" afterPath="$PROJECT_DIR$/JavaDOc/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" afterPath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" afterPath="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/HtmlParser.java" afterPath="$PROJECT_DIR$/src/main/java/service/HtmlParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" afterPath="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java" afterPath="$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/LBaseConnector.java" afterPath="$PROJECT_DIR$/src/main/java/service/LBaseConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/service/Resource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/service/SetEncoding.java" afterPath="$PROJECT_DIR$/src/main/java/service/SetEncoding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/service/InputCorrectorTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/InputCorrectorTest.java" />
     </list>
     <ignored path="AlcoScanner_2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,6 +82,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AlcoScanner_2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1481671940075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -31,6 +96,12 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
+  <component name="DsmViewSettings">
+    <option name="groupByModuleGroups" value="false" />
+    <option name="groupByModules" value="false" />
+    <option name="groupByPackages" value="false" />
+    <option name="groupCycles" value="true" />
+  </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
@@ -41,14 +112,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HtmlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/HtmlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsInternetConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1692">
+              <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
+              <folding>
+                <element signature="e#785#786#0" expanded="false" />
+                <element signature="e#819#820#0" expanded="false" />
+                <element signature="e#3047#3048#0" expanded="false" />
+                <element signature="e#3102#3103#0" expanded="false" />
+                <element signature="e#3181#3182#0" expanded="false" />
+                <element signature="e#3221#3222#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BaseReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="364" column="60" selection-start-line="364" selection-start-column="60" selection-end-line="364" selection-end-column="60" />
+            <state relative-caret-position="300">
+              <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#MyFrame#0;class#BaseReader#0" expanded="false" />
+                <element signature="method#mouseEntered#0;class#13975:14430" expanded="false" />
+                <element signature="method#mouseExited#0;class#13975:14430" expanded="false" />
+                <element signature="method#mouseEntered#0;class#14480:14939" expanded="false" />
+                <element signature="method#mouseExited#0;class#14480:14939" expanded="false" />
+                <element signature="method#mouseEntered#0;class#14982:15427" expanded="false" />
+                <element signature="method#mouseExited#0;class#14982:15427" expanded="false" />
+                <element signature="method#mouseEntered#0;class#15466:15903" expanded="false" />
+                <element signature="method#mouseExited#0;class#15466:15903" expanded="false" />
                 <element signature="method#init#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#layoutManager#0;class#BaseReader#0" expanded="false" />
@@ -58,13 +186,14 @@
                 <element signature="method#setEditable#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#inputProtectionEnable#0;class#BaseReader#0" expanded="false" />
                 <element signature="method#saveChanges#0;class#BaseReader#0" expanded="false" />
-                <marker date="1481161731273" expanded="true" signature="16594:16641" ph="SELECT * FRO... products" />
-                <marker date="1481161731273" expanded="true" signature="16665:16700" ph="SELECT id FR... products" />
-                <marker date="1481161731273" expanded="true" signature="19007:19055" ph="SELECT * FRO... products" />
-                <marker date="1481161731273" expanded="true" signature="19410:19458" ph="SELECT * FRO... products" />
-                <marker date="1481161731273" expanded="true" signature="19839:19874" ph="SELECT * FRO... products" />
-                <marker date="1481161731273" expanded="true" signature="21671:21893" ph="update Produ... " />
-                <marker date="1481161731273" expanded="true" signature="23591:23641" ph="SELECT * FRO... products" />
+                <element signature="method#serchByCode#0;class#BaseReader#0" expanded="false" />
+                <marker date="1482173097525" expanded="true" signature="16579:16626" ph="SELECT * FRO... products" />
+                <marker date="1482173097525" expanded="true" signature="16650:16685" ph="SELECT id FR... products" />
+                <marker date="1482173097525" expanded="true" signature="19159:19207" ph="SELECT * FRO... products" />
+                <marker date="1482173097525" expanded="true" signature="19725:19773" ph="SELECT * FRO... products" />
+                <marker date="1482173097525" expanded="true" signature="20154:20189" ph="SELECT * FRO... products" />
+                <marker date="1482173097525" expanded="true" signature="21986:22208" ph="update Produ... " />
+                <marker date="1482173097525" expanded="true" signature="23906:23956" ph="SELECT * FRO... products" />
               </folding>
             </state>
           </provider>
@@ -106,9 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/service/IsInternetConnection.java" />
-        <option value="$PROJECT_DIR$/src/EgaisConnector/SendRequest.java" />
-        <option value="$PROJECT_DIR$/src/service/InputCorrector.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47141ea5-11ef-4cfd-bccf-c8f7db687fef/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/90835e9c-4a9c-4442-98e7-5bede9313001/console.sql" />
@@ -128,34 +254,37 @@
         <option value="$PROJECT_DIR$/src/service/HtmlParserTest.java" />
         <option value="$PROJECT_DIR$/src/service/LBaseConnector.java" />
         <option value="$PROJECT_DIR$/src/test/java/Workbench/PDF417DecoderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/HtmlParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/SerchInBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/EgaisConnector/SendRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/DataBaseWorker_.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.java" />
         <option value="$PROJECT_DIR$/src/imgs.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/Workcbench.form" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
         <option value="$PROJECT_DIR$/src/main/java/service/LogIn.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/service/InputCorrectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/java/service/Updater.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Resource.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/InputCorrector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/SerchCode.form" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/SerchCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/service/HtmlParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/service/LBaseConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/Workbench.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java" />
       </list>
     </option>
@@ -181,12 +310,18 @@
   <component name="MavenProjectNavigator">
     <option name="alwaysShowArtifactId" value="true" />
     <option name="showVersions" value="true" />
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
     <option name="y" value="24" />
-    <option name="width" value="1865" />
+    <option name="width" value="1920" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -236,7 +371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +401,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlcoScanner_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remastered" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,17 +563,17 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/HtmlParser.java&#10;conne&#9;FILE&#9;file:///home/ilya-kulakov/WorkSpace/JavaProjects/Remastered/src/service/IsInternetConnection.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="/usr/lib/jvm/log4j-1.2.17.jar!/" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="239" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="457" />
@@ -415,7 +584,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="alcoscanner_2" />
-    <property name="settings.editor.selected.configurable" value="Images" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
@@ -1057,7 +1226,15 @@
       <workItem from="1480787109997" duration="4882000" />
       <workItem from="1480810820786" duration="57815000" />
       <workItem from="1481066634340" duration="15375000" />
-      <workItem from="1481154846052" duration="6887000" />
+      <workItem from="1481154846052" duration="10808000" />
+      <workItem from="1481378295846" duration="881000" />
+      <workItem from="1481388199399" duration="1222000" />
+      <workItem from="1481402255602" duration="595000" />
+      <workItem from="1481413785432" duration="1713000" />
+      <workItem from="1481537329061" duration="2454000" />
+      <workItem from="1481626535864" duration="19605000" />
+      <workItem from="1482075298672" duration="5441000" />
+      <workItem from="1482173029845" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен todo">
       <created>1476921923137</created>
@@ -1165,7 +1342,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301916000" />
+    <option name="totallyTimeSpent" value="338314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,7 +1354,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1865" height="1056" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1185,16 +1362,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48927984" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810021" sideWeight="0.4442001" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2308961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3058455" sideWeight="0.4621131" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23364486" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24112734" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3058455" sideWeight="0.53788686" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20120946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18746564" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1995731" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18729989" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1203,36 +1379,44 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5762004" sideWeight="0.5272145" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6367432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="DSM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="0" y="24" width="1920" height="1056" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09290188" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810021" sideWeight="0.4442001" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2308961" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5762004" sideWeight="0.47278547" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23364486" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5762004" sideWeight="0.5272145" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18746564" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18729989" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3006263" sideWeight="0.49807587" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48927984" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3006263" sideWeight="0.49807587" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DSM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="0" y="24" width="1920" height="1056" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48927984" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4070981" sideWeight="0.5557999" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09290188" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20120946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30897704" sideWeight="0.49697635" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3058455" sideWeight="0.5557999" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09290188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1995731" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1281,15 +1465,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="110" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1298,199 +1474,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/imgs.properties" />
-    <entry file="file://$PROJECT_DIR$/alcoscanner_2.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/package-info.java" />
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/ImageIcon.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/LogIn.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/DataBaseWorker_.java" />
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/MysqlIO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="1426" column="0" selection-start-line="1426" selection-start-column="0" selection-end-line="1426" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/ConnectionPropertiesImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="557" column="0" selection-start-line="557" selection-start-column="0" selection-end-line="557" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/EscapeProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Class_diag.uml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/InputCorrector.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/InputCorrectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="2322" column="0" selection-start-line="2322" selection-start-column="0" selection-end-line="2322" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/StatementImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/Constants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/Field.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/RowDataStatic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/Messages.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/ResultSetImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="355" column="0" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/arrow_large_left.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Updater.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/SetEncoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EgaisConnector/SendRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/LBaseConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <marker date="1480343992194" expanded="true" signature="545:570" ph="select count... book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/LookAndFeel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaDOc/service/HtmlParser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/HtmlParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="method#HtmlParser#0;class#HtmlParser#0" expanded="false" />
-            <element signature="method#prepareStirng#0;class#HtmlParser#0" expanded="false" />
-            <element signature="method#reedInfoFields#0;class#HtmlParser#0" expanded="false" />
-            <element signature="method#parsing#0;class#HtmlParser#0" expanded="false" />
-            <element signature="method#checkInfo#0;class#HtmlParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/PreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="2115" column="0" selection-start-line="2115" selection-start-column="0" selection-end-line="2115" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -1505,71 +1488,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="58" column="84" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
-          <folding>
-            <element signature="method#setDomain#0;class#IsInternetConnection#0" expanded="false" />
-            <element signature="method#IsInternetConnection#0;class#IsInternetConnection#0" expanded="false" />
-            <element signature="method#isReachableByPing#0;class#IsInternetConnection#0" expanded="false" />
-            <element signature="method#checkConnection#0;class#IsInternetConnection#0" expanded="false" />
-            <element signature="method#connectionStatus#0;class#IsInternetConnection#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/InputCorrector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="e#1242#1243#0" expanded="false" />
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1884#1885#0" expanded="false" />
-            <element signature="e#1916#1917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SerchCode.form" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SerchCode.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.form">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1580,59 +1500,542 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java">
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">com</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">EgaisConnector</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">java</node>
+            <node x="" y="">org</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">service</node>
+            <node x="" y="">Workbench</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="209.0" y="206.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/service">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>service</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="145.0" y="130.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Workbench.InformationTable">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.InformationTable</OriginalElement>
+          <nodes>
+            <node x="394.0" y="324.0">java.awt.Frame</node>
+            <node x="477.3972222222223" y="243.0">java.awt.Window</node>
+            <node x="657.3972222222224" y="324.0">javax.swing.RootPaneContainer</node>
+            <node x="279.28888888888895" y="0.0">java.awt.MenuContainer</node>
+            <node x="0.0" y="324.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
+            <node x="569.6472222222224" y="162.0">javax.accessibility.Accessible</node>
+            <node x="443.1472222222223" y="81.0">java.awt.Component</node>
+            <node x="568.288888888889" y="0.0">java.awt.image.ImageObserver</node>
+            <node x="438.28888888888895" y="0.0">java.io.Serializable</node>
+            <node x="449.6472222222223" y="162.0">java.awt.Container</node>
+            <node x="373.28888888888895" y="415.0">javax.swing.JFrame</node>
+            <node x="338.78888888888895" y="496.0">Workbench.InformationTable</node>
+            <node x="215.0" y="324.0">javax.swing.WindowConstants</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.awt.Window" target="javax.accessibility.Accessible">
+              <point x="22.25" y="-15.5" />
+              <point x="544.1472222222224" y="218.0" />
+              <point x="595.3972222222224" y="218.0" />
+              <point x="-25.75" y="15.5" />
+            </edge>
+            <edge source="java.awt.Window" target="java.awt.Container">
+              <point x="-22.25" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.MenuContainer">
+              <point x="-37.66666666666666" y="-15.5" />
+              <point x="461.9805555555556" y="56.0" />
+              <point x="383.53888888888895" y="56.0" />
+              <point x="34.75" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="java.awt.Frame">
+              <point x="0.0" y="-15.5" />
+              <point x="414.78888888888895" y="375.0" />
+              <point x="431.5" y="375.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
+              <point x="37.666666666666664" y="-15.5" />
+              <point x="537.313888888889" y="56.0" />
+              <point x="637.288888888889" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.WindowConstants">
+              <point x="-16.6" y="-15.5" />
+              <point x="398.1888888888889" y="385.0" />
+              <point x="294.5" y="385.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.io.Serializable">
+              <point x="7.105427357601002E-15" y="-15.5" />
+              <point x="499.6472222222223" y="56.0" />
+              <point x="493.28888888888895" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Frame" target="java.awt.Window">
+              <point x="18.75" y="-15.5" />
+              <point x="450.25" y="299.0" />
+              <point x="521.8972222222224" y="299.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.RootPaneContainer">
+              <point x="33.2" y="-15.5" />
+              <point x="447.98888888888894" y="395.0" />
+              <point x="740.8972222222224" y="395.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="Workbench.InformationTable" target="javax.swing.JFrame">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Window" target="java.awt.Component">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="java.awt.Frame" target="java.awt.MenuContainer">
+              <point x="-18.75" y="-15.5" />
+              <point x="412.75" y="299.0" />
+              <point x="314.03888888888895" y="299.0" />
+              <point x="-34.75" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.Container">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="java.awt.Container" target="java.awt.Component">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.TransferHandler.HasGetTransferHandler">
+              <point x="-33.2" y="-15.5" />
+              <point x="381.58888888888896" y="395.0" />
+              <point x="97.5" y="395.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.accessibility.Accessible">
+              <point x="16.6" y="-15.5" />
+              <point x="431.38888888888897" y="385.0" />
+              <point x="646.8972222222224" y="385.0" />
+              <point x="25.75" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="620.0" y="235.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-AlcoScanner_2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-AlcoScanner_2</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="98.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassDiagram.uml" />
+    <entry file="file://$PROJECT_DIR$/src/Alco_Scanner_Class_Diagram.uml" />
+    <entry file="uml://JAVA/EgaisConnector.SendRequest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>EgaisConnector.SendRequest</OriginalElement>
+          <nodes>
+            <node x="" y="">EgaisConnector.SendRequest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EgaisConnector/SendRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Main</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-447.0" y="2.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/service.IsInternetConnection">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>service.IsInternetConnection</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.FunctionalInterface</node>
+            <node x="" y="">service.IsInternetConnection</node>
+            <node x="" y="">java.lang.Runnable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="89.0" y="97.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1228">
-          <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setEditable#0;class#InformationTable#0" expanded="false" />
-            <element signature="method#setInformation#0;class#InformationTable#0" expanded="false" />
-            <element signature="class#DataBaseWorker#0;class#InformationTable#0" expanded="false" />
-            <marker date="1481155785546" expanded="true" signature="7234:7445" ph="INSERT INTO ProductBase.products... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SerchCode.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SerchCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="33" column="49" selection-start-line="30" selection-start-column="12" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <marker date="1480963718799" expanded="true" signature="696:766" ph="UPDATE Produ... " />
-            <marker date="1480963718799" expanded="true" signature="866:916" ph="SELECT * FRO... products" />
-          </folding>
+    <entry file="uml://JAVA/Workbench.LookAndFeel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.LookAndFeel</OriginalElement>
+          <nodes>
+            <node x="" y="">Workbench.LookAndFeel</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/service.LBaseConnector">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>service.LBaseConnector</OriginalElement>
+          <nodes>
+            <node x="" y="">service.LBaseConnector</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="73.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Workbench.PDF417Decoder">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.PDF417Decoder</OriginalElement>
+          <nodes>
+            <node x="" y="">Workbench.PDF417Decoder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="71.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Workbench.SearchInBase">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.SearchInBase</OriginalElement>
+          <nodes>
+            <node x="" y="">Workbench.SearchInBase</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="62.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/service.InputCorrector">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>service.InputCorrector</OriginalElement>
+          <nodes>
+            <node x="" y="">service.InputCorrector</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="16.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Workbench.Workbench">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.Workbench</OriginalElement>
+          <nodes>
+            <node x="581.0" y="324.0">java.awt.Frame</node>
+            <node x="406.5111111111113" y="496.0">Workbench.Workbench</node>
+            <node x="666.2305555555556" y="243.0">java.awt.Window</node>
+            <node x="456.51111111111123" y="0.0">java.awt.MenuContainer</node>
+            <node x="0.0" y="324.0">javax.swing.TransferHandler.HasGetTransferHandler</node>
+            <node x="215.00000000000006" y="324.0">javax.swing.RootPaneContainer</node>
+            <node x="758.4805555555556" y="162.0">javax.accessibility.Accessible</node>
+            <node x="631.9805555555557" y="81.0">java.awt.Component</node>
+            <node x="615.5111111111112" y="0.0">java.awt.image.ImageObserver</node>
+            <node x="773.5111111111112" y="0.0">java.io.Serializable</node>
+            <node x="638.4805555555557" y="162.0">java.awt.Container</node>
+            <node x="420.51111111111123" y="415.0">javax.swing.JFrame</node>
+            <node x="402.00000000000006" y="324.0">javax.swing.WindowConstants</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.awt.Window" target="javax.accessibility.Accessible">
+              <point x="22.25" y="-15.5" />
+              <point x="732.9805555555556" y="218.0" />
+              <point x="784.2305555555556" y="218.0" />
+              <point x="-25.75" y="15.5" />
+            </edge>
+            <edge source="java.awt.Window" target="java.awt.Container">
+              <point x="-22.25" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.MenuContainer">
+              <point x="-37.66666666666663" y="-15.5" />
+              <point x="650.8138888888891" y="56.0" />
+              <point x="560.7611111111112" y="56.0" />
+              <point x="34.75" y="15.5" />
+            </edge>
+            <edge source="Workbench.Workbench" target="javax.swing.JFrame">
+              <point x="-5.6843418860808015E-14" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="java.awt.Frame">
+              <point x="16.600000000000023" y="-15.5" />
+              <point x="478.61111111111126" y="385.0" />
+              <point x="618.5" y="385.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
+              <point x="0.0" y="-15.5" />
+              <point x="688.4805555555557" y="56.0" />
+              <point x="684.5111111111112" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.WindowConstants">
+              <point x="0.0" y="-15.5" />
+              <point x="462.01111111111123" y="375.0" />
+              <point x="481.50000000000006" y="375.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Component" target="java.io.Serializable">
+              <point x="37.66666666666663" y="-15.5" />
+              <point x="726.1472222222224" y="56.0" />
+              <point x="828.5111111111112" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Frame" target="java.awt.Window">
+              <point x="18.75" y="-15.5" />
+              <point x="637.25" y="299.0" />
+              <point x="710.7305555555556" y="299.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.RootPaneContainer">
+              <point x="-16.600000000000023" y="-15.5" />
+              <point x="445.4111111111112" y="385.0" />
+              <point x="298.50000000000006" y="385.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="java.awt.Frame" target="java.awt.MenuContainer">
+              <point x="-18.75" y="-15.5" />
+              <point x="599.75" y="299.0" />
+              <point x="491.26111111111123" y="299.0" />
+              <point x="-34.75" y="15.5" />
+            </edge>
+            <edge source="java.awt.Container" target="java.awt.Component">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.swing.TransferHandler.HasGetTransferHandler">
+              <point x="-33.19999999999999" y="-15.5" />
+              <point x="428.81111111111125" y="395.0" />
+              <point x="97.5" y="395.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.swing.JFrame" target="javax.accessibility.Accessible">
+              <point x="33.19999999999999" y="-15.5" />
+              <point x="495.2111111111112" y="395.0" />
+              <point x="835.7305555555556" y="395.0" />
+              <point x="25.75" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5918141592920354" x="396.0" y="-69.0" />
+          <SelectedNodes>
+            <node>Workbench.Workbench</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Workbench.BaseReader">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Workbench.BaseReader</OriginalElement>
+          <nodes>
+            <node x="" y="">java.awt.Frame</node>
+            <node x="" y="">java.awt.Window</node>
+            <node x="" y="">java.awt.MenuContainer</node>
+            <node x="" y="">javax.swing.TransferHandler.HasGetTransferHandler</node>
+            <node x="" y="">javax.swing.RootPaneContainer</node>
+            <node x="" y="">javax.accessibility.Accessible</node>
+            <node x="" y="">java.awt.Component</node>
+            <node x="" y="">java.awt.image.ImageObserver</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">java.awt.Container</node>
+            <node x="" y="">javax.swing.JFrame</node>
+            <node x="" y="">Workbench.BaseReader</node>
+            <node x="" y="">javax.swing.WindowConstants</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5879120879120879" x="445.0" y="264.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/PDF417Decoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        <state relative-caret-position="792">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/LookAndFeel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/972cebb0/219588b4-abee-49cb-b409-72dc1b1caacd/ProductBase.products">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1640,26 +2043,184 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Workbench/PDF417DecoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchByCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Workbench/SerchInBaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="117" column="68" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="68" />
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/Workbench.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="86" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#3590:4052" expanded="false" />
-            <element signature="method#mouseEntered#0;class#3590:4052" expanded="false" />
-            <element signature="method#mouseExited#0;class#3590:4052" expanded="false" />
-            <element signature="method#mouseExited#0;class#4102:4555" expanded="false" />
-            <element signature="method#mouseEntered#0;class#4599:5041" expanded="false" />
-            <element signature="method#mouseExited#0;class#4599:5041" expanded="false" />
-            <element signature="method#getCode#0;class#Workbench#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2963#2964#0" expanded="false" />
+            <marker date="1481673315483" expanded="true" signature="1085:1086" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/InformationTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/SearchInBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <marker date="1481673453536" expanded="true" signature="657:727" ph="UPDATE Produ... " />
+            <marker date="1481673453536" expanded="true" signature="827:877" ph="SELECT * FRO... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/InputCorrector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LBaseConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alcoscanner_2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alcoscanner_2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlcoScanner_2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Alco_Scanner_2.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/mysql-connector-java-5.1.2.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="1637" column="0" selection-start-line="1637" selection-start-column="0" selection-end-line="1637" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/plaf/basic/BasicComboBoxUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="1122" column="25" selection-start-line="1122" selection-start-column="25" selection-end-line="1122" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/HtmlParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/HtmlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IsInternetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="100" column="44" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
+          <folding>
+            <element signature="e#785#786#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3102#3103#0" expanded="false" />
+            <element signature="e#3181#3182#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1668,7 +2229,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="ui-designer">
@@ -1677,11 +2237,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Workbench/BaseReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="364" column="60" selection-start-line="364" selection-start-column="60" selection-end-line="364" selection-end-column="60" />
+        <state relative-caret-position="300">
+          <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#MyFrame#0;class#BaseReader#0" expanded="false" />
+            <element signature="method#mouseEntered#0;class#13975:14430" expanded="false" />
+            <element signature="method#mouseExited#0;class#13975:14430" expanded="false" />
+            <element signature="method#mouseEntered#0;class#14480:14939" expanded="false" />
+            <element signature="method#mouseExited#0;class#14480:14939" expanded="false" />
+            <element signature="method#mouseEntered#0;class#14982:15427" expanded="false" />
+            <element signature="method#mouseExited#0;class#14982:15427" expanded="false" />
+            <element signature="method#mouseEntered#0;class#15466:15903" expanded="false" />
+            <element signature="method#mouseExited#0;class#15466:15903" expanded="false" />
             <element signature="method#init#0;class#BaseReader#0" expanded="false" />
             <element signature="method#getConnection#0;class#BaseReader#0" expanded="false" />
             <element signature="method#layoutManager#0;class#BaseReader#0" expanded="false" />
@@ -1691,13 +2257,14 @@
             <element signature="method#setEditable#0;class#BaseReader#0" expanded="false" />
             <element signature="method#inputProtectionEnable#0;class#BaseReader#0" expanded="false" />
             <element signature="method#saveChanges#0;class#BaseReader#0" expanded="false" />
-            <marker date="1481161731273" expanded="true" signature="16594:16641" ph="SELECT * FRO... products" />
-            <marker date="1481161731273" expanded="true" signature="16665:16700" ph="SELECT id FR... products" />
-            <marker date="1481161731273" expanded="true" signature="19007:19055" ph="SELECT * FRO... products" />
-            <marker date="1481161731273" expanded="true" signature="19410:19458" ph="SELECT * FRO... products" />
-            <marker date="1481161731273" expanded="true" signature="19839:19874" ph="SELECT * FRO... products" />
-            <marker date="1481161731273" expanded="true" signature="21671:21893" ph="update Produ... " />
-            <marker date="1481161731273" expanded="true" signature="23591:23641" ph="SELECT * FRO... products" />
+            <element signature="method#serchByCode#0;class#BaseReader#0" expanded="false" />
+            <marker date="1482173097525" expanded="true" signature="16579:16626" ph="SELECT * FRO... products" />
+            <marker date="1482173097525" expanded="true" signature="16650:16685" ph="SELECT id FR... products" />
+            <marker date="1482173097525" expanded="true" signature="19159:19207" ph="SELECT * FRO... products" />
+            <marker date="1482173097525" expanded="true" signature="19725:19773" ph="SELECT * FRO... products" />
+            <marker date="1482173097525" expanded="true" signature="20154:20189" ph="SELECT * FRO... products" />
+            <marker date="1482173097525" expanded="true" signature="21986:22208" ph="update Produ... " />
+            <marker date="1482173097525" expanded="true" signature="23906:23956" ph="SELECT * FRO... products" />
           </folding>
         </state>
       </provider>
@@ -1709,9 +2276,9 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="library" />
               <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
@@ -1721,6 +2288,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Ilya Kulakov</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1775,7 +2354,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.itextpdf:itextpdf:5.5.10</last-edited>
+          <last-edited>Maven: log4j:log4j:1.2.17</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -2,23 +2,35 @@ package Workbench;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.Font;
-import com.itextpdf.text.pdf.*;
-import com.itextpdf.text.Document;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.io.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
  * Created by ilya-kulakov on 30.11.16.
  */
-public class BaseReader extends JFrame {
+class BaseReader extends JFrame {
     private JPanel rootPanel;
     private JLabel nameLable;
     private JLabel alcoCodeLable;
@@ -67,14 +79,11 @@ public class BaseReader extends JFrame {
     private JButton searchByCodeBtn;
     private JButton SaveReportBtn;
 
-    String path;
+    private String path;
 
-    final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
-    final String user = "root";
-    final String password = "12345";
-    Connection connection;
-    int currentId = 2;
-    Integer[] idArray = {};
+    private Connection connection;
+    private int currentId = 2;
+    private Integer[] idArray = {};
 
     BaseReader() {
         super( "Просмотр базы" );
@@ -120,14 +129,13 @@ public class BaseReader extends JFrame {
 
         SaveReportBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-                MyFrame frame = new MyFrame();
-                System.out.println( "Окно открылось" );
+
+              //  MyFrame frame = new MyFrame(  );
+                getSavePath();
                 BaseFont bf = null;
                 BaseFont anchorFnt = null;
                 try {
                     bf = BaseFont.createFont( "Arial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
-                    Font customFont;
-                    //bf = BaseFont.createFont(new FileInputStream(getResourceAsStream("fonts/arial.ttf")), BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
                     anchorFnt = BaseFont.createFont( "arialbd.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED );
                 } catch (DocumentException e) {
                     e.printStackTrace();
@@ -138,7 +146,7 @@ public class BaseReader extends JFrame {
                 Font titleFont = new Font( anchorFnt );
                 Document document = new Document( PageSize.A4, 50, 50, 50, 50 );
                 try {
-                    PdfWriter writer = PdfWriter.getInstance( document, new FileOutputStream( path + "/Отчёт по товарам.pdf" ) );
+                    PdfWriter writer = PdfWriter.getInstance( document, new FileOutputStream( path  ) );
                 } catch (DocumentException e) {
                     e.printStackTrace();
                 } catch (FileNotFoundException e) {
@@ -370,20 +378,17 @@ public class BaseReader extends JFrame {
     }
 
 
-    public class MyFrame extends JFrame {
-        MyFrame() {
-            System.out.println( "start Window" );
-//            JFileChooser fileopen = new JFileChooser();
-//            fileopen.showSaveDialog( this);
-//            setBounds( 0, 0, 600, 500 );
-//            JFileChooser dialog = new JFileChooser();
-//            dialog.showOpenDialog( this );
-            JFileChooser chooser = new JFileChooser();
-            chooser.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY );
-            chooser.showSaveDialog( null );
-            path = chooser.getSelectedFile().getAbsolutePath();
-            System.out.println( "Finish it" );
-
+    private void getSavePath(){
+        FileDialog fileDialog = new FileDialog( new JFrame( ),"Укажите куда сохранить..." ,FileDialog.SAVE );
+        fileDialog.setVisible( true );
+        path =fileDialog.getDirectory() + fileDialog.getFile() + ".pdf";
+        File file = new File( path );
+        try {
+            file.createNewFile();
+        } catch (FileAlreadyExistsException e) {
+            System.err.println("already exists: " + e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -413,6 +418,9 @@ public class BaseReader extends JFrame {
             e.printStackTrace();
         }
         try {
+            String password = "12345";
+            String user = "root";
+            String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
             connection = DriverManager.getConnection( url, user, password );
         } catch (SQLException e) {
             e.printStackTrace();
@@ -428,7 +436,7 @@ public class BaseReader extends JFrame {
             volumeTextField.setText( set.getString( "volume" ) );
             manufacturTextField.setText( set.getString( "manufacture" ) );
             fsrarTextField.setText( set.getString( "fsrar" ) );
-            fsrarTextField.setText( set.getString( "fullname" ) );
+            fullNameTextField.setText( set.getString( "fullname" ) );
             innTextField.setText( set.getString( "inn" ) );
             kppTextField.setText( set.getString( "kpp" ) );
             adresTextField.setText( set.getString( "adr" ) );
@@ -446,7 +454,12 @@ public class BaseReader extends JFrame {
         ResultSet resultSet;
         String qr2 = "SELECT * FROM  ProductBase.products WHERE id = ?";
         PreparedStatement statement = connection.prepareStatement( qr2 );
-        statement.setInt( 1, idArray[currentId++] );
+        if(idArray[currentId] == idArray[idArray.length-1]){
+            statement.setInt( 1,idArray[0] );
+            currentId = 0;
+        }else{
+            statement.setInt( 1, idArray[currentId++] );
+        }
         resultSet = statement.executeQuery();
         inputProtectionEnable();
         return resultSet;

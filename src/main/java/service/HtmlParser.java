@@ -5,18 +5,16 @@ import javax.swing.*;
 /**
  * Created by ilya-kulakov on 20.10.16.
  */
-public class HtmlParser {
+public class HtmlParser{
 
     /**Содержит входную строку*/
     private String inputBuffer;
     //**Массив с конснстантными размерами полей формы*/
        // @// TODO: 20.10.16 Изменить костыль
-    private int lengthArr[];
-    /**индекс начала чтения информации в поле*/
-    private int startIndex=0;
+    private final int[] lengthArr;
     /**конечный индекс чтения информации в поле*/
     private int endIndex = 0;
-    private String[] str = new String[17]; //{" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "}; //инициализация иначе не \
+    private final String[] str = new String[17]; //{" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "}; //инициализация иначе не \
 
     /**
      *
@@ -29,7 +27,7 @@ public class HtmlParser {
 
     /**Исключает из HTML текста теги типа <br></br>*/
     private void prepareStirng(){
-        if(checkInfo()==false)
+        if(!checkInfo())
             return;
         inputBuffer = inputBuffer.replace("</br>", "\n");
       //  inputBuffer = inputBuffer.replace("И","И");
@@ -41,12 +39,13 @@ public class HtmlParser {
         /*@// TODO: 20.10.16 Проверить выражение снизу */
         //while(i < lengthArr.length && ((startIndex + lengthArr[i])<inputBuffer.length())){
         while(i < lengthArr.length){
-            startIndex = lengthArr[i] + endIndex;
-            endIndex = inputBuffer.indexOf("\n",startIndex);
+            /*индекс начала чтения информации в поле*/
+            int startIndex = lengthArr[i] + endIndex;
+            endIndex = inputBuffer.indexOf("\n", startIndex );
             if(endIndex== startIndex){
                 str[i] = "";
             }
-            str[i] = inputBuffer.substring(startIndex, endIndex);
+            str[i] = inputBuffer.substring( startIndex, endIndex);
             endIndex +=1;
             ++i;
         }

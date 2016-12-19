@@ -12,16 +12,6 @@ package service;
 public class InputCorrector {
 
     /**
-     * Строка с кирилическими символами
-     */
-    private String rusAlpha = "йцукенгшщзхъфывапролджэячсмить";
-
-    /**
-     * Строка с латинскими символами эквивалентными русским {@see service.InputCorrector#rusAlpha}
-     */
-    private String engAlpha = "qwertyuiop[]asdfghjkl;'zxcvbnm";
-
-    /**
      * Содержит строку переданную в конструктор {@see service.InputCorrector#InputCorrector}
      */
     private String inputCode;
@@ -48,7 +38,15 @@ public class InputCorrector {
      */
     private void correctInput(){
         //TODO:изменить реализацию
+        /*
+      Строка с кирилическими символами
+     */
+        String rusAlpha = "йцукенгшщзхъфывапролджэячсмить";
         char[] ru = rusAlpha.toCharArray();
+        /*
+      Строка с латинскими символами эквивалентными русским {@see service.InputCorrector#rusAlpha}
+     */
+        String engAlpha = "qwertyuiop[]asdfghjkl;'zxcvbnm";
         char[] en = engAlpha.toCharArray();
         char[] code = inputCode.toCharArray();
         for (int i = 0; i < inputCode.length(); ++i)

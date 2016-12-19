@@ -5,7 +5,7 @@ import java.sql.*;
 /**
  * Created by ilya-kulakov on 26.11.16.
  */
-public  class SearchInBase {
+class SearchInBase{
     public static String code;
 
     /**
@@ -13,14 +13,14 @@ public  class SearchInBase {
      * @throws ClassNotFoundException
      * @throws SQLClientInfoException
      */
-    public static void SearchInBase(String alCode) throws ClassNotFoundException, SQLClientInfoException {
+    public static void SearchInBase(String alCode) {
         code = alCode;
     }
 
 
-   static final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
-   static final String user = "root";
-   static final String password = "12345";
+   private static final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
+   private static final String user = "root";
+   private static final String password = "12345";
 
     public static boolean isExist(){
         Connection connection;

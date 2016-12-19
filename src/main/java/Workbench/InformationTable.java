@@ -1,13 +1,16 @@
 package Workbench;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.sql.*;
 
 /**
  * Created by ilya-kulakov on 20.10.16.
  */
-public class InformationTable extends JFrame {
+class InformationTable extends JFrame {
     private JPanel rootPanel;
     private JLabel nameLable;
     private JLabel alcoCodeLable;
@@ -85,13 +88,39 @@ public class InformationTable extends JFrame {
                     adder.addNewInfo();
                 }catch (ClassNotFoundException cnfe) {
                     cnfe.printStackTrace();
-                }catch (SQLClientInfoException ex){
-                    ex.printStackTrace();
                 }
             }
         });
 
-        }
+        Save.addMouseListener( new MouseAdapter() {
+
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                Save.setForeground( new Color( 12, 17, 223  ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                Save.setForeground( Color.black );
+
+            }
+        } );
+        redactor.addMouseListener( new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent mouseEvent) {
+                super.mouseEntered( mouseEvent );
+                redactor.setForeground( new Color( 12,17,223 ) );
+            }
+
+            @Override
+            public void mouseExited(MouseEvent mouseEvent) {
+                super.mouseExited( mouseEvent );
+                redactor.setForeground( Color.black );
+            }
+        } );
+    }
 
 
     private void setScanedCode(String[] code) {
@@ -209,7 +238,7 @@ public class InformationTable extends JFrame {
     }
 
     public class DataBaseWorker {
-        public  void addNewInfo() throws ClassNotFoundException, SQLClientInfoException {
+        public  void addNewInfo() throws ClassNotFoundException {
             final String url = "jdbc:mysql://localhost:3306/ProductBase?characterEncoding=UTF8";
             final String user = "root";
             final String password = "12345";
@@ -258,7 +287,6 @@ public class InformationTable extends JFrame {
             }
         }
     }
-
 
     public  String  getProductName(){
         return  nameTextField.getText();
