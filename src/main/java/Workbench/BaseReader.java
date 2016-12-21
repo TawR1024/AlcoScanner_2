@@ -129,8 +129,6 @@ class BaseReader extends JFrame {
 
         SaveReportBtn.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-
-              //  MyFrame frame = new MyFrame(  );
                 getSavePath();
                 BaseFont bf = null;
                 BaseFont anchorFnt = null;
@@ -469,7 +467,15 @@ class BaseReader extends JFrame {
         ResultSet resultSet;
         String qr2 = "SELECT * FROM  ProductBase.products WHERE id = ?";
         PreparedStatement statement = connection.prepareStatement( qr2 );
-        statement.setInt( 1, idArray[currentId--] );
+//        statement.setInt( 1, idArray[currentId--] );
+//        resultSet = statement.executeQuery();
+//        inputProtectionEnable();
+        if(idArray[currentId] == idArray[0]){
+            statement.setInt( 1,idArray[idArray.length-1] );
+            currentId = idArray.length-1;
+        }else{
+            statement.setInt( 1, idArray[currentId--] );
+        }
         resultSet = statement.executeQuery();
         inputProtectionEnable();
         return resultSet;

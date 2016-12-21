@@ -19,7 +19,6 @@ class Main {
         IsInternetConnection connection = new IsInternetConnection();
         Thread nThread = new Thread( connection );
         nThread.start();
-
         Workbench workplace = new Workbench();
         workplace.setLocationRelativeTo( null );
     }

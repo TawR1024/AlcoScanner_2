@@ -287,11 +287,11 @@ class InformationTable extends JFrame {
             }
         }
     }
-
+    @Deprecated
     public  String  getProductName(){
         return  nameTextField.getText();
     }
-
+    @Deprecated
     public String getAlcoCode(){
         return  AlcoCodetextField.getText();
     }

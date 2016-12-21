@@ -3,18 +3,16 @@
     <output-path>$PROJECT_DIR$/out/artifacts/AlcoScanner_2_jar</output-path>
     <root id="archive" name="AlcoScanner_2.jar">
       <element id="module-output" name="AlcoScanner_2" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.10/itextpdf-5.5.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextpdf-5.5.10.jar" path-in-jar="/" />
-      <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
-      <element id="library" level="project" name="com.itextpdf:itextpdf:5.5.10" />
-      <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.10" />
-      <element id="library" level="project" name="Maven: junit:junit:4.11" />
-      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
-      <element id="library" level="module" name="JUnit4" module-name="AlcoScanner_2" />
-      <element id="file-copy" path="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar" />
+      <element id="extracted-dir" path="/usr/lib/jvm/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

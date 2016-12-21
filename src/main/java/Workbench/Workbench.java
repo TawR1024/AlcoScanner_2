@@ -1,7 +1,9 @@
 package Workbench;
 
 import EgaisConnector.SendRequest;
+
 import org.apache.log4j.Logger;
+
 import service.HtmlParser;
 import service.InputCorrector;
 import service.IsInternetConnection;
@@ -9,7 +11,10 @@ import service.IsInternetConnection;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.sql.SQLClientInfoException;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by ilya-kulakov on 19.10.16.
@@ -26,6 +31,10 @@ public class Workbench extends JFrame {
 
     private final Logger logger = Logger.getLogger(Workbench.class);
 
+    // Пул потоков
+
+    ExecutorService executor = Executors.newSingleThreadExecutor();
+
 
     public Workbench() {
         super("Сканер марки");
@@ -39,20 +48,44 @@ public class Workbench extends JFrame {
         setResizable( false );
         baseBtn.setToolTipText( "Открыть локальную базу с товарами");
 
-
-
-        /**Анонимный класс для обработки нажатия на кнопку "Получить код"*/
         extractCodeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-                getCode();
+                executor.submit(() -> {
+                    getCode();
+                    String threadName = Thread.currentThread().getName();
+                    System.out.println("Hello " + threadName);
+                    try {
+                        System.out.println("attempt to shutdown executor");
+                        executor.shutdown();
+                        executor.awaitTermination(5, TimeUnit.SECONDS);
+                    }
+                    catch (InterruptedException e) {
+                        System.err.println("tasks interrupted");
+                    }
+                    finally {
+                        if (!executor.isTerminated()) {
+                            System.err.println("cancel non-finished tasks");
+                        }
+                        executor.shutdownNow();
+                        System.out.println("shutdown finished");
+                    }
+                });
             }
         });
 
         RequestButton.addActionListener(new ActionListener() {
            // @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                requesToExternalBase();
+                executor.submit(() -> {
+                    requesToExternalBase();
+                    String threadName = Thread.currentThread().getName();
+                    System.out.println("Hello " + threadName);
+
+                });
+                executor.shutdown();
             }
+                //requesToExternalBase();
+
 
         });
 
@@ -97,7 +130,7 @@ public class Workbench extends JFrame {
 
 
 
-       /* подсветка текста*/
+       //* подсветка текста
         extractCodeButton.addMouseListener( new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent mouseEvent) {
@@ -157,7 +190,6 @@ public class Workbench extends JFrame {
             logger.error( "Внешний сервер передал пустой ответ" );
             return;
         }
-
 
         HtmlParser parser = new HtmlParser(requestInfo);
         String[] infoFields = parser.parsing();
